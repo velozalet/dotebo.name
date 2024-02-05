@@ -59,7 +59,7 @@ body {
       -webkit-text-fill-color: transparent;
       display: inline-block; }
   .section-regular.banner .navbar .navbar-nav li.nav-item-decor .nav-link {
-    cursor: none; }
+    cursor: auto; }
   .section-regular.banner .navbar.navbar-dark-cst {
     background-color: #010512; }
     .section-regular.banner .navbar.navbar-dark-cst.navbar--scrolled {
@@ -78,10 +78,16 @@ body {
     display: inline-block;
     font-weight: 500;
     font-family: "Unbounded", sans-serif;
-    font-size: 96px;
-    /*58px for mobile*/ }
+    font-size: 6rem;
+    /*3.63rem for mobile*/ }
 
 /*_________________________________________/#BANNER-SECTION*/
+/*___________________________________________#ABOUT-SECTION*/
+.section-regular.about {
+  padding-top: 125px;
+  padding-bottom: 75px; }
+
+/*_________________________________________/#ABOUT-SECTION*/
 /**
 	MEDIA QUERIES:
 */
@@ -110,7 +116,7 @@ body {
   /*100%|1400px|1199px|991px|767px|575px*/
   /*___________________________________________#BANNER-SECTION*/
   .section-regular.banner .banner--text-info p.text-capitalize {
-    font-size: 75px; }
+    font-size: 4.69rem; }
 
   /*_________________________________________/#BANNER-SECTION*/ }
 @media screen and (max-width: 575px) {
@@ -121,7 +127,7 @@ body {
   /*100%|1400px|1199px|991px|767px|575px*/
   /*___________________________________________#BANNER-SECTION*/
   .section-regular.banner .banner--text-info p.text-capitalize {
-    font-size: 58px; }
+    font-size: 3.63rem; }
 
   /*_________________________________________/#BANNER-SECTION*/ }
 @media screen and (max-width: 399px) {
@@ -130,7 +136,7 @@ body {
 
   /*___________________________________________#BANNER-SECTION*/
   .section-regular.banner .banner--text-info p.text-capitalize {
-    font-size: 49px; }
+    font-size: 3.06rem; }
 
   /*_________________________________________/#BANNER-SECTION*/ }
 

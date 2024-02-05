@@ -90,7 +90,7 @@ body{overflow-y: scroll; }
                 }
             }
             li.nav-item-decor{
-                .nav-link{cursor:none;}
+                .nav-link{cursor:auto;}
             }
         }
 
@@ -117,12 +117,17 @@ body{overflow-y: scroll; }
 
             font-weight: $fontWeight-500;
             font-family: $fontFamily-unbounded;
-            font-size: 96px; /*58px for mobile*/
+            font-size: 6rem; /*3.63rem for mobile*/
         }
     }
 }
 /*_________________________________________/#BANNER-SECTION*/
 
+/*___________________________________________#ABOUT-SECTION*/
+.section-regular.about{
+    padding-top:125px; padding-bottom:75px;
+}
+/*_________________________________________/#ABOUT-SECTION*/
 
 
 /**
@@ -141,14 +146,14 @@ body{overflow-y: scroll; }
     #breakpoint_check{ width:767px; } /*100%|1400px|1199px|991px|767px|575px*/
 
     /*___________________________________________#BANNER-SECTION*/
-    .section-regular.banner .banner--text-info p.text-capitalize{ font-size:75px; }
+    .section-regular.banner .banner--text-info p.text-capitalize{ font-size:4.69rem; }
     /*_________________________________________/#BANNER-SECTION*/
 }
 @media screen and (max-width: 575px) { /*from 575px and less (Class prefix .col-)*/
     #breakpoint_check{ width:575px; } /*100%|1400px|1199px|991px|767px|575px*/
 
     /*___________________________________________#BANNER-SECTION*/
-    .section-regular.banner .banner--text-info p.text-capitalize{ font-size:58px; }
+    .section-regular.banner .banner--text-info p.text-capitalize{ font-size:3.63rem; }
     /*_________________________________________/#BANNER-SECTION*/
 }
 
@@ -156,6 +161,6 @@ body{overflow-y: scroll; }
     #breakpoint_check{ width:399px; }
 
     /*___________________________________________#BANNER-SECTION*/
-    .section-regular.banner .banner--text-info p.text-capitalize{ font-size:49px; }
+    .section-regular.banner .banner--text-info p.text-capitalize{ font-size:3.06rem; }
     /*_________________________________________/#BANNER-SECTION*/
 }

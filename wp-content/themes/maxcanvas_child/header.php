@@ -26,6 +26,7 @@
 $get_queried_object = get_queried_object(); if(!$get_queried_object){ $get_queried_object = (object) array('post_name' => 'undefined'); }
 
 $logo = get_field('site_logo','options'); $logo2 = get_field('site_logo2','options');
+$banner_suptitle = get_field('suptitle','options'); $banner_title = get_field('title','options');
 ?>
 	<mark id="breakpoint_check" style="display:none!important;"></mark>
 
@@ -57,8 +58,8 @@ $logo = get_field('site_logo','options'); $logo2 = get_field('site_logo2','optio
 		<div class="banner--text-info container-md pt-md-0 pt-4 pb-md-0 pb-3">
 			<div class="row align-items-center">
 				<div class="col">
-					<p class="text-uppercase mb-0">digital agency</p>
-					<p class="text-capitalize mb-0">dotebo</p>
+					<p class="text-uppercase mb-0"><?php if($banner_suptitle): echo $banner_suptitle; else: echo 'digital agency'; endif;?></p>
+					<p class="text-capitalize mb-0"><?php if($banner_title): echo $banner_title; else: echo 'dotebo'; endif;?></p>
 				</div>
 				<div class="col text-end">
 					<a class="" href="#contact">
