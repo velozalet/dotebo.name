@@ -1,0 +1,161 @@
+/*_________________________________________________#GENERAL*/
+$color-black-firm: #010512;
+$color-black: #000000;
+$color-white: #FFFFFF;
+$color-violet: #C27FFF;
+$color-blue: #00A9E2;
+
+$fontFamily-poppins: 'Poppins', sans-serif;
+$fontFamily-unbounded: 'Unbounded', sans-serif;
+$fontWeight-300: 300;
+$fontWeight-400: 400;
+$fontWeight-500: 500;
+$fontWeight-600: 600;
+/*
+Unbounded light = 300
+Unbounded Regular = 400
+Unbounded Medium = 500
+Unbounded SemiBold = 600
+
+Poppins Regular = 400
+Unbounded SemiBold = 600
+*/
+
+@mixin text-linear-gradient-blue {
+    background: linear-gradient(22deg, $color-violet, $color-blue);
+    background: -webkit-linear-gradient(72deg, $color-violet, $color-blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+//___________________________
+html{ scroll-behavior: smooth; }
+body{overflow-y: scroll; }
+
+#breakpoint_check{ width:auto; } /*100%|1400px|1199px|991px|767px|575px*/
+.section-regular{
+
+    &.section-regular-test{
+        outline: 1px solid black;
+        height: 850px;
+        margin-bottom: 11px;
+    }
+}
+/*_________________________________________________/#GENERAL*/
+
+/*___________________________________________#BANNER-SECTION*/
+.section-regular.banner{
+    .navbar{
+        .navbar-brand{
+            >img{
+                width:47px; height:54px;
+                &.img-logo-scrolled{
+                    width:auto; height:42px;
+                }
+            }
+        }
+        .collapse.navbar-collapse{
+            flex-grow: 0;
+        }
+
+        .navbar-toggler{
+            border-color: transparent;
+            &:hover, &:focus, &:active{
+                box-shadow: none !important;
+            }
+            .navbar-toggler-icon{
+                background-image: none;
+            }
+            &.collapsed{
+                .navbar-toggler-icon:before {
+                    content: url(http://dotebo.name/wp-content/themes/maxcanvas_child/img/half-hamb.svg);
+                }
+            }
+            .navbar-toggler-icon:before {
+                content: url(http://dotebo.name/wp-content/themes/maxcanvas_child/img/half-hamb.svg);
+            }
+        }
+        .navbar-nav{
+            .nav-item{
+                a.nav-link{
+                    color: $color-white;
+                    text-transform: capitalize;
+                    font-weight: $fontWeight-500;
+                    font-family: $fontFamily-unbounded;
+                    padding-right: 0.9rem;
+                    padding-left: 0.9rem;
+                    &:hover, &:focus, &:active{
+                        @include text-linear-gradient-blue;
+                    }
+                }
+            }
+            li.nav-item-decor{
+                .nav-link{cursor:none;}
+            }
+        }
+
+        &.navbar-dark-cst{
+            background-color:$color-black-firm;
+            &.navbar--scrolled{
+                background-color: #010512ad;
+            }
+        }
+    }
+    background-color: $color-black-firm;
+    figure{
+        padding-top:95px;
+    }
+
+    .banner--text-info{
+        p.text-uppercase{
+            color: $color-white;
+            font-weight: $fontWeight-500;
+            font-family: $fontFamily-unbounded;
+        }
+        p.text-capitalize{
+            @include text-linear-gradient-blue;
+
+            font-weight: $fontWeight-500;
+            font-family: $fontFamily-unbounded;
+            font-size: 96px; /*58px for mobile*/
+        }
+    }
+}
+/*_________________________________________/#BANNER-SECTION*/
+
+
+
+/**
+	MEDIA QUERIES:
+*/
+@media (min-width: 1400px){ /*from 1400px and up (Class prefix .col-xxl-)*/
+    #breakpoint_check{ width:1400px; } /*100%|1400px|1199px|991px|767px|575px*/
+}
+@media screen and (max-width: 1199px){
+    #breakpoint_check{ width:1199px; } /*100%|1400px|1199px|991px|767px|575px*/
+}
+@media screen and (max-width: 991px){ /*from 991px till 768px (Class prefix .col-md-)*/
+    #breakpoint_check{ width:991px; } /*100%|1400px|1199px|991px|767px|575px*/
+}
+@media screen and (max-width: 767px){ /*from 767px till 576px (Class prefix .col-sm-)*/
+    #breakpoint_check{ width:767px; } /*100%|1400px|1199px|991px|767px|575px*/
+
+    /*___________________________________________#BANNER-SECTION*/
+    .section-regular.banner .banner--text-info p.text-capitalize{ font-size:75px; }
+    /*_________________________________________/#BANNER-SECTION*/
+}
+@media screen and (max-width: 575px) { /*from 575px and less (Class prefix .col-)*/
+    #breakpoint_check{ width:575px; } /*100%|1400px|1199px|991px|767px|575px*/
+
+    /*___________________________________________#BANNER-SECTION*/
+    .section-regular.banner .banner--text-info p.text-capitalize{ font-size:58px; }
+    /*_________________________________________/#BANNER-SECTION*/
+}
+
+@media screen and (max-width: 399px) {
+    #breakpoint_check{ width:399px; }
+
+    /*___________________________________________#BANNER-SECTION*/
+    .section-regular.banner .banner--text-info p.text-capitalize{ font-size:49px; }
+    /*_________________________________________/#BANNER-SECTION*/
+}
