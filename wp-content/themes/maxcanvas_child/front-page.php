@@ -7,86 +7,51 @@
 ?>
 <?php get_header(); ?>
 
+<?php
+//"General(Options)" Settings
+$copyright_text = get_field('copyright_text','options'); //dd($copyright_text);
+$social_links = get_field('social_links','options');
+//__/General(Options)" Settings
+
+//"About Us" Section
+$suptitle_aboutUs = get_field('suptitle_aboutUs', get_the_ID() );
+$title_aboutUs = get_field('title_aboutUs', get_the_ID() );
+$text_description_1_aboutUs = get_field('text_description_1_aboutUs', get_the_ID() );
+$text_description_2_aboutUs = get_field('text_description_2_aboutUs', get_the_ID() );
+
+$optBtnLink_aboutUs = get_field('optional_button_link_aboutUs', get_the_ID() );
+//__/"About Us" Section
+?>
+
 <section id="about" class="section-regular about">
 	<div class="container-md pt-md-0 pt-0 pb-md-0 pb-0">
-		<div class="row">
-			<div class="col-lg-7 col-12">
-				<p class="text-uppercase mb-2">welcome to</p>
-				<p class="text-capitalize mb-2">Digital agency Dotebo</p>
-				<p class="mb-2">Our mission is to recognize and to take advantage of digital opportunities to enhance business operations for both small and big organizations.</p>
-				<p class="mb-2">Our expertise consists of 10 years of commercial experience in the IT field. We have created various products: effective landing pages, blogs, corporate websites, educational platforms, information portals, start-ups and large enterprise solutions with a team of about 30 people.</p>
-				<p>
-					<a href="#">
-						<img class="" src="http://dotebo.name/wp-content/uploads/2024/02/fb-icon.svg" alt="Dotebo Logo">
-					</a>
-					<a href="#">
-						<img class="" src="http://dotebo.name/wp-content/uploads/2024/02/ins-icon.svg" alt="Dotebo Logo">
-					</a>
-					<a href="#">
-						<img class="" src="http://dotebo.name/wp-content/uploads/2024/02/in-icon.svg" alt="Dotebo Logo">
-					</a>
-					<a href="#">
-						<img class="" src="http://dotebo.name/wp-content/uploads/2024/02/up-icon.svg" alt="Dotebo Logo">
-					</a>
+		<div class="row align-items-center">
+			<div class="row--1 col-lg-7 col-12">
+				<p class="suptitle text-uppercase mb-3"><?php echo($suptitle_aboutUs) ? $suptitle_aboutUs : 'welcome to';?></p>
+				<h1 class="title text-capitalize mb-2"><?php echo($title_aboutUs) ? $title_aboutUs : 'digital agency dotebo';?></h1>
+				<?php if($text_description_1_aboutUs):?>
+					<p class="text-describe-bold mb-2"><?php echo $text_description_1_aboutUs;?></p>
+				<?php endif;?>
+				<?php if($text_description_2_aboutUs):?>
+					<p class="text-describe mb-2"><?php echo $text_description_2_aboutUs;?></p>
+				<?php endif;?>
 
-				</p>
-				<p><a href="#contact">Contact Us</a> </p>
+				<div class="social-icons-bar mt-4">
+					<?php get_template_part('templates/component/__social_links_for_aboutus_section');?>
+				</div>
+
+				<div class="mt-md-5 mt-4">
+					<?php if($optBtnLink_aboutUs): $link_target = ($optBtnLink_aboutUs['target']) ? $optBtnLink_aboutUs['target'] : '_self';?>
+						<a class="cst-link-arrow" href="<?php echo $optBtnLink_aboutUs['url'];?>" target="<?php echo esc_attr($link_target);?>"><?php echo $optBtnLink_aboutUs['title'];?></a>
+					<?php endif;?>
+				</div>
 			</div>
-			<div class="col-lg col-12">
-				<div class="row">
-					<div class="col-12 mb-3">
-						<div class="row">
-							<div class="col-auto">
-								<img src="http://dotebo.name/wp-content/uploads/2024/02/icon-about-1.png" alt="Dotebo Logo">
-							</div>
-							<div class="col">
-								<p>Lorem Ipsum</p>
-								<p>Lorem Ipsum dolor sit amet consectuur adipisching elit sed do eumode depesh</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 mb-3">
-						<div class="row">
-							<div class="col-auto">
-								<img src="http://dotebo.name/wp-content/uploads/2024/02/icon-about-2.png" alt="Dotebo Logo">
-							</div>
-							<div class="col">
-								<p>Lorem Ipsum</p>
-								<p>Lorem Ipsum dolor sit amet consectuur adipisching elit sed do eumode depesh</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 mb-3">
-						<div class="row">
-							<div class="col-auto">
-								<img src="http://dotebo.name/wp-content/uploads/2024/02/icon-about-3.png" alt="Dotebo Logo">
-							</div>
-							<div class="col">
-								<p>Lorem Ipsum</p>
-								<p>Lorem Ipsum dolor sit amet consectuur adipisching elit sed do eumode depesh</p>
-							</div>
-						</div>
-					</div>
-				</div> <!--/row-->
+			<div class="row--2 col-lg col-12 mt-lg-0 mt-5">
+				<?php get_template_part('templates/component/__services_for_aboutus_section');?>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-3 col-12">
-				<p class="mb-0" style="font-size: 96px;">1</p>
-				<p class="mb-0">Lorem Ipsum dolor sit amet consectuur adipisching elit sed do eumode depesh</p>
-			</div>
-			<div class="col-lg-3 col-12">
-				<p class="mb-0" style="font-size: 96px;">2</p>
-				<p class="mb-0">Lorem Ipsum dolor sit amet consectuur adipisching elit sed do eumode depesh</p>
-			</div>
-			<div class="col-lg-3 col-12">
-				<p class="mb-0" style="font-size: 96px;">3</p>
-				<p class="mb-0">Lorem Ipsum dolor sit amet consectuur adipisching elit sed do eumode depesh</p>
-			</div>
-			<div class="col-lg-3 col-12">
-				<p class="mb-0" style="font-size: 96px;">4</p>
-				<p class="mb-0">Lorem Ipsum dolor sit amet consectuur adipisching elit sed do eumode depesh</p>
-			</div>
+		</div>  <!--/row-->
+		<div class="row--3 mt-lg-5 mt-3 row justify-content-center">
+			<?php get_template_part('templates/component/__services2_for_aboutus_section');?>
 		</div>
 	</div>
 </section>

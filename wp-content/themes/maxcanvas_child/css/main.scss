@@ -4,6 +4,7 @@ $color-black: #000000;
 $color-white: #FFFFFF;
 $color-violet: #C27FFF;
 $color-blue: #00A9E2;
+$color-dark-blue: #231B64;
 
 $fontFamily-poppins: 'Poppins', sans-serif;
 $fontFamily-unbounded: 'Unbounded', sans-serif;
@@ -21,16 +22,65 @@ Poppins Regular = 400
 Unbounded SemiBold = 600
 */
 
-@mixin text-linear-gradient-blue {
+@mixin text-linear-gradient-blue{
     background: linear-gradient(22deg, $color-violet, $color-blue);
     background: -webkit-linear-gradient(72deg, $color-violet, $color-blue);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
 }
+@mixin suptitle-white-unbounded{
+    color: $color-white;
+    font-weight: $fontWeight-400;
+    font-family: $fontFamily-unbounded;
+    font-size: 1rem;
+}
+@mixin suptitle-black-unbounded{
+    color: $color-black-firm;
+    font-weight: $fontWeight-400;
+    font-family: $fontFamily-unbounded;
+    font-size: 1rem;
+}
+@mixin title-unbounded{
+    font-weight: $fontWeight-600;
+    font-family: $fontFamily-unbounded;
+    font-size: 3rem;
+}
+@mixin cst-link-arrow-d-blue{
+    font-weight: $fontWeight-600;
+    font-family: $fontFamily-unbounded;
+    font-size: 1.25rem;
+    color: $color-dark-blue;
+    &:after{
+        content: url(/wp-content/themes/maxcanvas_child/img/arrw-i-right-d-blue.svg);
+        margin-left: 9px;
+    }
+    &:hover, &:focus, &:active{
+        color: $color-blue;
+        &:after{
+            content: url(/wp-content/themes/maxcanvas_child/img/arrw-i-right-blue.svg);
+        }
+    }
+}
+@mixin cst-link-arrow-blue{
+    font-weight: $fontWeight-600;
+    font-family: $fontFamily-unbounded;
+    font-size: 1.25rem;
+    color: $color-blue;
+    &:after{
+        content: url(/wp-content/themes/maxcanvas_child/img/arrw-i-right-blue.svg);
+        margin-left: 9px;
+    }
+    &:hover, &:focus, &:active{
+        color: $color-dark-blue;
+        &:after{
+            content: url(/wp-content/themes/maxcanvas_child/img/arrw-i-right-d-blue.svg);
+        }
+    }
+}
 //___________________________
 html{ scroll-behavior: smooth; }
-body{overflow-y: scroll; }
+body{ font-family:$fontFamily-unbounded; font-weight:$fontWeight-400; color:$color-black-firm; overflow-y:scroll; }
 
 #breakpoint_check{ width:auto; } /*100%|1400px|1199px|991px|767px|575px*/
 .section-regular{
@@ -108,9 +158,7 @@ body{overflow-y: scroll; }
 
     .banner--text-info{
         p.text-uppercase{
-            color: $color-white;
-            font-weight: $fontWeight-500;
-            font-family: $fontFamily-unbounded;
+            @include suptitle-white-unbounded;
         }
         p.text-capitalize{
             @include text-linear-gradient-blue;
@@ -126,6 +174,67 @@ body{overflow-y: scroll; }
 /*___________________________________________#ABOUT-SECTION*/
 .section-regular.about{
     padding-top:125px; padding-bottom:75px;
+    .row--1{
+        .suptitle{
+            @include suptitle-black-unbounded;
+        }
+        .title{
+            @include title-unbounded;
+            color: $color-dark-blue;
+        }
+        .text-describe-bold{
+            font-size: 1.5rem;
+            font-family: $fontFamily-unbounded;
+            font-weight: $fontWeight-500;
+        }
+        .text-describe{
+            line-height: 1.8; /*24px*/
+        }
+        .social-icons-bar{
+
+        }
+        a.cst-link-arrow{
+            @include cst-link-arrow-d-blue;
+        }
+    }
+
+    .row--2{
+        .text-container{
+            p:nth-of-type(1){
+                font-size: 1.25rem;
+                font-family: $fontFamily-unbounded;
+                font-weight: $fontWeight-500;
+            }
+            p:nth-of-type(2){
+                font-size: 1rem;
+                font-family: $fontFamily-poppins;
+                font-weight: $fontWeight-400;
+                line-height: 1.8;
+            }
+        }
+    }
+
+    .row--3{
+        div{
+            p:nth-of-type(1){
+                font-size: 6rem;
+                font-family: $fontFamily-unbounded;
+                font-weight: $fontWeight-600;
+                color: $color-blue;
+            }
+            p:nth-of-type(2){
+                font-size: 1.25rem;
+                font-family: $fontFamily-unbounded;
+                font-weight: $fontWeight-500;
+            }
+            p:nth-of-type(3){
+                font-size: 1rem;
+                font-family: $fontFamily-poppins;
+                font-weight: $fontWeight-400;
+                line-height: 1.8;
+            }
+        }
+    }
 }
 /*_________________________________________/#ABOUT-SECTION*/
 
@@ -148,6 +257,8 @@ body{overflow-y: scroll; }
     /*___________________________________________#BANNER-SECTION*/
     .section-regular.banner .banner--text-info p.text-capitalize{ font-size:4.69rem; }
     /*_________________________________________/#BANNER-SECTION*/
+    /*___________________________________________#ABOUT-SECTION*/
+    /*_________________________________________/#ABOUT-SECTION*/
 }
 @media screen and (max-width: 575px) { /*from 575px and less (Class prefix .col-)*/
     #breakpoint_check{ width:575px; } /*100%|1400px|1199px|991px|767px|575px*/
@@ -155,6 +266,16 @@ body{overflow-y: scroll; }
     /*___________________________________________#BANNER-SECTION*/
     .section-regular.banner .banner--text-info p.text-capitalize{ font-size:3.63rem; }
     /*_________________________________________/#BANNER-SECTION*/
+    /*___________________________________________#ABOUT-SECTION*/
+    .section-regular.about { padding-top: 60px; padding-bottom: 50px; }
+    .section-regular.about .row--1 .title{ font-size:2rem; }
+    .section-regular.about .row--1 .text-describe-bold{ font-size:1.13rem; }
+    .section-regular.about .row--1 .text-describe{ font-size:0.88rem; }
+    .section-regular.about .row--2 .text-container p:nth-of-type(1){ font-size:1.13rem; }
+    .section-regular.about .row--2 .text-container p:nth-of-type(2){ font-size:0.88rem; line-height:1.5; }
+    .section-regular.about .row--3 div p:nth-of-type(2){ font-size:1.13rem; }
+    .section-regular.about .row--3 div p:nth-of-type(3){ font-size:0.88rem; line-height:1.5; }
+    /*_________________________________________/#ABOUT-SECTION*/
 }
 
 @media screen and (max-width: 399px) {

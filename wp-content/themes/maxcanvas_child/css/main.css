@@ -12,6 +12,9 @@ html {
   scroll-behavior: smooth; }
 
 body {
+  font-family: "Unbounded", sans-serif;
+  font-weight: 400;
+  color: #010512;
   overflow-y: scroll; }
 
 #breakpoint_check {
@@ -68,8 +71,9 @@ body {
     padding-top: 95px; }
   .section-regular.banner .banner--text-info p.text-uppercase {
     color: #FFFFFF;
-    font-weight: 500;
-    font-family: "Unbounded", sans-serif; }
+    font-weight: 400;
+    font-family: "Unbounded", sans-serif;
+    font-size: 1rem; }
   .section-regular.banner .banner--text-info p.text-capitalize {
     background: linear-gradient(22deg, #C27FFF, #00A9E2);
     background: -webkit-linear-gradient(72deg, #C27FFF, #00A9E2);
@@ -86,6 +90,58 @@ body {
 .section-regular.about {
   padding-top: 125px;
   padding-bottom: 75px; }
+  .section-regular.about .row--1 .suptitle {
+    color: #010512;
+    font-weight: 400;
+    font-family: "Unbounded", sans-serif;
+    font-size: 1rem; }
+  .section-regular.about .row--1 .title {
+    font-weight: 600;
+    font-family: "Unbounded", sans-serif;
+    font-size: 3rem;
+    color: #231B64; }
+  .section-regular.about .row--1 .text-describe-bold {
+    font-size: 1.5rem;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 500; }
+  .section-regular.about .row--1 .text-describe {
+    line-height: 1.8;
+    /*24px*/ }
+  .section-regular.about .row--1 a.cst-link-arrow {
+    font-weight: 600;
+    font-family: "Unbounded", sans-serif;
+    font-size: 1.25rem;
+    color: #231B64; }
+    .section-regular.about .row--1 a.cst-link-arrow:after {
+      content: url(/wp-content/themes/maxcanvas_child/img/arrw-i-right-d-blue.svg);
+      margin-left: 9px; }
+    .section-regular.about .row--1 a.cst-link-arrow:hover, .section-regular.about .row--1 a.cst-link-arrow:focus, .section-regular.about .row--1 a.cst-link-arrow:active {
+      color: #00A9E2; }
+      .section-regular.about .row--1 a.cst-link-arrow:hover:after, .section-regular.about .row--1 a.cst-link-arrow:focus:after, .section-regular.about .row--1 a.cst-link-arrow:active:after {
+        content: url(/wp-content/themes/maxcanvas_child/img/arrw-i-right-blue.svg); }
+  .section-regular.about .row--2 .text-container p:nth-of-type(1) {
+    font-size: 1.25rem;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 500; }
+  .section-regular.about .row--2 .text-container p:nth-of-type(2) {
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    line-height: 1.8; }
+  .section-regular.about .row--3 div p:nth-of-type(1) {
+    font-size: 6rem;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 600;
+    color: #00A9E2; }
+  .section-regular.about .row--3 div p:nth-of-type(2) {
+    font-size: 1.25rem;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 500; }
+  .section-regular.about .row--3 div p:nth-of-type(3) {
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    line-height: 1.8; }
 
 /*_________________________________________/#ABOUT-SECTION*/
 /**
@@ -118,7 +174,9 @@ body {
   .section-regular.banner .banner--text-info p.text-capitalize {
     font-size: 4.69rem; }
 
-  /*_________________________________________/#BANNER-SECTION*/ }
+  /*_________________________________________/#BANNER-SECTION*/
+  /*___________________________________________#ABOUT-SECTION*/
+  /*_________________________________________/#ABOUT-SECTION*/ }
 @media screen and (max-width: 575px) {
   /*from 575px and less (Class prefix .col-)*/
   #breakpoint_check {
@@ -129,7 +187,36 @@ body {
   .section-regular.banner .banner--text-info p.text-capitalize {
     font-size: 3.63rem; }
 
-  /*_________________________________________/#BANNER-SECTION*/ }
+  /*_________________________________________/#BANNER-SECTION*/
+  /*___________________________________________#ABOUT-SECTION*/
+  .section-regular.about {
+    padding-top: 60px;
+    padding-bottom: 50px; }
+
+  .section-regular.about .row--1 .title {
+    font-size: 2rem; }
+
+  .section-regular.about .row--1 .text-describe-bold {
+    font-size: 1.13rem; }
+
+  .section-regular.about .row--1 .text-describe {
+    font-size: 0.88rem; }
+
+  .section-regular.about .row--2 .text-container p:nth-of-type(1) {
+    font-size: 1.13rem; }
+
+  .section-regular.about .row--2 .text-container p:nth-of-type(2) {
+    font-size: 0.88rem;
+    line-height: 1.5; }
+
+  .section-regular.about .row--3 div p:nth-of-type(2) {
+    font-size: 1.13rem; }
+
+  .section-regular.about .row--3 div p:nth-of-type(3) {
+    font-size: 0.88rem;
+    line-height: 1.5; }
+
+  /*_________________________________________/#ABOUT-SECTION*/ }
 @media screen and (max-width: 399px) {
   #breakpoint_check {
     width: 399px; }

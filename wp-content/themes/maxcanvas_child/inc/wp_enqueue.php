@@ -7,7 +7,8 @@
 if ( ! function_exists( 'maxcanvas_child_scripts_styles' ) ):
 	function maxcanvas_child_scripts_styles() {
 	//____________________________________include fonts:
-		wp_enqueue_style( 'unbounded_font', 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Unbounded:wght@300;400;500;600&display=swap', array() );
+		wp_enqueue_style( 'poppins_font', 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap', array() );
+		wp_enqueue_style( 'unbounded_font', 'https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600&display=swap', array() );
 		wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' );
 	//____________________________________include styles:
 		wp_enqueue_style( 'wow-css', get_stylesheet_directory_uri() . '/wow-animation/animate.min.css', array() );
