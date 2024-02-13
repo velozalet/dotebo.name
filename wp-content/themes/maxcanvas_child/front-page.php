@@ -18,9 +18,11 @@ $suptitle_aboutUs = get_field('suptitle_aboutUs', get_the_ID() );
 $title_aboutUs = get_field('title_aboutUs', get_the_ID() );
 $text_description_1_aboutUs = get_field('text_description_1_aboutUs', get_the_ID() );
 $text_description_2_aboutUs = get_field('text_description_2_aboutUs', get_the_ID() );
-
 $optBtnLink_aboutUs = get_field('optional_button_link_aboutUs', get_the_ID() );
 //__/"About Us" Section
+
+//Our Work(Projects)" Section
+//__/Our Work(Projects)" Section
 ?>
 
 <section id="about" class="section-regular about">
@@ -49,19 +51,42 @@ $optBtnLink_aboutUs = get_field('optional_button_link_aboutUs', get_the_ID() );
 			<div class="row--2 col-lg col-12 mt-lg-0 mt-5">
 				<?php get_template_part('templates/component/__services_for_aboutus_section');?>
 			</div>
-		</div>  <!--/row-->
+		</div> <!--/row-->
 		<div class="row--3 mt-lg-5 mt-3 row justify-content-center">
 			<?php get_template_part('templates/component/__services2_for_aboutus_section');?>
 		</div>
 	</div>
 </section>
 
-<section id="projects" class="section-regular section-regular-test projects">
-<h2 class="text-center">Projects</h2>
-</section>
+<section id="project_services" class="project-services">
+	<div class="veil">
+		<!--"Our Work(Projects)" Section-->
+		<section id="projects" class="section-regular projectss">
+			<p class="suptitle text-uppercase text-center mb-3">projects</p>
+			<div class="text-center">
+				<h2 class="title text-capitalize mb-2">our work</h2>
+			</div>
 
-<section id="services" class="section-regular section-regular-test services">
-	<h2 class="text-center">Services </h2>
+			<div class="container-md">
+				<?php get_template_part('templates/component/__projects_cpt_for_project_section');?>
+			</div>
+		</section>
+		<!--/"Our Work(Projects)" Section-->
+		<!--"Our Services" Section-->
+		<section id="services" class="section-regular section-regular-test services">
+			<p class="suptitle text-uppercase text-center mb-3" style="color:white;">what we do</p>
+			<div class="text-center">
+				<h2 class="title text-capitalize mb-2" style="color:white;">our Services</h2>
+
+				<div class="container-md">
+					<div class="--our-services row">
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--"/Our Services" Section-->
+	</div> <!--.veil-->
 </section>
 
 <section id="technologies" class="section-regular section-regular-test technologies">

@@ -46,3 +46,11 @@ function dd($data){
 	echo '<pre>', var_dump($data), '</pre>';
 }
 
+function get_featured_img_by_id($id){
+	return wp_get_attachment_url( get_post_thumbnail_id($id) );
+}
+
+function get_categories_of_cpt_by_id($post_id, $cpt_taxonomy_name){
+	return get_the_terms($post_id, $cpt_taxonomy_name );
+}
+

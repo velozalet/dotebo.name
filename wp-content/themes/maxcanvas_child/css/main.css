@@ -144,8 +144,68 @@ body {
     line-height: 1.8; }
 
 /*_________________________________________/#ABOUT-SECTION*/
+/*___________________________________________#PROJECTS & SERVICES-SECTION*/
+.project-services {
+  background-color: #010512;
+  z-index: 0; }
+  .project-services .veil {
+    position: relative; }
+    .project-services .veil:after {
+      content: '';
+      position: absolute;
+      background-image: url(http://dotebo.name/wp-content/uploads/2024/02/bg-projects_services.svg);
+      background-size: cover;
+      /*contain | 100%*/
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 0; }
+  .project-services .section-regular.projectss {
+    padding-top: 100px; }
+    .project-services .section-regular.projectss p.suptitle {
+      color: #FFFFFF;
+      font-weight: 400;
+      font-family: "Unbounded", sans-serif;
+      font-size: 1rem; }
+    .project-services .section-regular.projectss .title {
+      font-weight: 600;
+      font-family: "Unbounded", sans-serif;
+      font-size: 3rem;
+      background: linear-gradient(22deg, #C27FFF, #00A9E2);
+      background: -webkit-linear-gradient(72deg, #C27FFF, #00A9E2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block; }
+    .project-services .section-regular.projectss .--our-projects .img-project > img {
+      border-radius: 10px;
+      position: relative;
+      z-index: 1; }
+    .project-services .section-regular.projectss .--our-projects .img-project + p {
+      color: #FFFFFF;
+      font-size: 1.88rem;
+      font-family: "Unbounded", sans-serif;
+      font-weight: 500;
+      line-height: 1.1; }
+    .project-services .section-regular.projectss .--our-projects .tags-project {
+      color: #FFFFFF; }
+      .project-services .section-regular.projectss .--our-projects .tags-project > span {
+        color: #676A76;
+        font-size: 1.12rem;
+        font-family: "Unbounded", sans-serif;
+        font-weight: 400;
+        border: 1px solid #676A76;
+        border-radius: 5px;
+        padding: 10px;
+        display: inline-block; }
+      .project-services .section-regular.projectss .--our-projects .tags-project > span:last-of-type {
+        margin-bottom: 0 !important;
+        margin-right: 0 !important; }
+
+/*_________________________________________/#PROJECTS & SERVICES-SECTION*/
 /**
-	MEDIA QUERIES:
+	MEDIA QUERIES:  project_services
 */
 @media (min-width: 1400px) {
   /*from 1400px and up (Class prefix .col-xxl-)*/
@@ -163,7 +223,12 @@ body {
   #breakpoint_check {
     width: 991px; }
 
-  /*100%|1400px|1199px|991px|767px|575px*/ }
+  /*100%|1400px|1199px|991px|767px|575px*/
+  /*_________________________________________#PROJECTS & SERVICES-SECTION*/
+  .project-services .veil:after {
+    background-size: 100%; }
+
+  /*_________________________________________/#PROJECTS & SERVICES-SECTION*/ }
 @media screen and (max-width: 767px) {
   /*from 767px till 576px (Class prefix .col-sm-)*/
   #breakpoint_check {
@@ -176,7 +241,17 @@ body {
 
   /*_________________________________________/#BANNER-SECTION*/
   /*___________________________________________#ABOUT-SECTION*/
-  /*_________________________________________/#ABOUT-SECTION*/ }
+  /*_________________________________________/#ABOUT-SECTION*/
+  /*_________________________________________#PROJECTS & SERVICES-SECTION*/
+  .project-services .section-regular.projectss .--our-projects .tags-project > span {
+    font-size: 0.88rem;
+    display: inline-block;
+    padding: 5px; }
+
+  .project-services .section-regular.projectss .--our-projects .img-project + p {
+    font-size: 1.25rem; }
+
+  /*_________________________________________/#PROJECTS & SERVICES-SECTION*/ }
 @media screen and (max-width: 575px) {
   /*from 575px and less (Class prefix .col-)*/
   #breakpoint_check {
@@ -216,7 +291,13 @@ body {
     font-size: 0.88rem;
     line-height: 1.5; }
 
-  /*_________________________________________/#ABOUT-SECTION*/ }
+  /*_________________________________________/#ABOUT-SECTION*/
+  /*_________________________________________#PROJECTS & SERVICES-SECTION*/
+  .project-services .section-regular.projectss {
+    padding-top: 60px;
+    padding-bottom: 50px; }
+
+  /*_________________________________________/#PROJECTS & SERVICES-SECTION*/ }
 @media screen and (max-width: 399px) {
   #breakpoint_check {
     width: 399px; }

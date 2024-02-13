@@ -45,6 +45,7 @@ document.addEventListener( 'DOMContentLoaded', function () { //console.log('init
 				}else{
 					nameIdSection = event.target.getAttribute('href');
 				}
+				console.log(nameIdSection);
 				nameIdSection = nameIdSection.substr(1);
 				targetBlockToScroll = document.getElementById( nameIdSection );
 				targetBlockToScroll.scrollIntoView({
