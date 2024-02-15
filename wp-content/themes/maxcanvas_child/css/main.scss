@@ -200,6 +200,14 @@ body{ font-family:$fontFamily-unbounded; font-weight:$fontWeight-400; color:$col
     }
 
     .row--2{
+        .icon-container{
+            .icon-sub-container{
+                background-color:$color-white; border: 1px solid $color-gray; border-radius:6px; padding:25px; width:102px; height:106px; margin:0 auto;
+            }
+            img{
+                width:50px; height:54px;
+            }
+        }
         .text-container{
             p:nth-of-type(1){
                 font-size: 1.25rem;
@@ -251,7 +259,7 @@ body{ font-family:$fontFamily-unbounded; font-weight:$fontWeight-400; color:$col
             background-image: url(http://dotebo.name/wp-content/uploads/2024/02/bg-projects_services.svg);
             background-size: cover; /*contain | 100%*/
             background-repeat: no-repeat;
-            //background-position: 100% 0%;
+            background-position: 50% 0;
             width: 100%;
             height: 100%;
             top: 0;
@@ -274,7 +282,7 @@ body{ font-family:$fontFamily-unbounded; font-weight:$fontWeight-400; color:$col
         .--our-projects{
             .img-project{
                 >img{
-                    border-radius:10px; position:relative; z-index:1;
+                    border-radius:12px; position:relative; z-index:1;
                 }
                 &+p{
                     color:$color-white;
@@ -301,6 +309,65 @@ body{ font-family:$fontFamily-unbounded; font-weight:$fontWeight-400; color:$col
             }
         }
     }
+
+    .section-regular.services{
+        padding-top:85px; padding-bottom:130px;
+        p.suptitle{
+            @include suptitle-white-unbounded;
+        }
+        .title{
+            @include title-unbounded;
+            @include text-linear-gradient-blue;
+
+        }
+
+        .--our-services{
+            .img-project{
+                border: 1px solid $color-gray; border-radius: 8px;
+                //background-color: $color-black-firm; position:relative; z-index:1; //   opacity:0.7;
+                //position:relative; background-color: $color-black-firm; z-index:1; opacity:0.7;
+                //filter:blur(8px); -webkit-filter:blur(8px); height:100%;
+                //img{ position:relative; z-index:99 !important; }
+                position: relative;
+                .veil-service-block{
+                    &:after{
+                        content: '';
+                        position: absolute;
+                        background-color: $color-black-firm;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        z-index: 1;
+                        filter: blur(16px); -webkit-filter:blur(16px);
+                        opacity: 0.9;
+                    }
+                }
+                img{
+                    position:relative; z-index:3;
+                }
+            }
+            .--our-services-name-service{
+                color:$color-white;
+                font-size:1.88rem;
+                font-family: $fontFamily-unbounded;
+                font-weight: $fontWeight-500;
+                line-height:1.1;
+            }
+            .--our-services-description{
+                color:$color-white;
+                font-size:1.0rem;
+                font-family: $fontFamily-unbounded;
+                font-weight: $fontWeight-400;
+                line-height:1.8;
+            }
+            a.cst-link-arrow{
+                @include cst-link-arrow-blue;
+                position: relative;
+                z-index: 1;
+            }
+        }
+    }
 }
 /*_________________________________________/#PROJECTS & SERVICES-SECTION*/
 
@@ -320,6 +387,7 @@ body{ font-family:$fontFamily-unbounded; font-weight:$fontWeight-400; color:$col
 
     /*_________________________________________#PROJECTS & SERVICES-SECTION*/
     .project-services .veil:after{ background-size:100%; }
+    .project-services .section-regular.services{ padding-top:45px; }
     /*_________________________________________/#PROJECTS & SERVICES-SECTION*/
 }
 @media screen and (max-width: 767px){ /*from 767px till 576px (Class prefix .col-sm-)*/
@@ -338,9 +406,11 @@ body{ font-family:$fontFamily-unbounded; font-weight:$fontWeight-400; color:$col
         display:inline-block;
         padding:5px;
     }
-    .project-services .section-regular.projectss .--our-projects .img-project + p{
+    .project-services .section-regular.projectss .--our-projects .img-project + p,
+    .project-services .section-regular.services .--our-services .--our-services-name-service{
         font-size: 1.25rem;
     }
+    .project-services .section-regular.services .--our-services .--our-services-description{ font-size:0.81rem; }
     /*_________________________________________/#PROJECTS & SERVICES-SECTION*/
 
 }
@@ -366,6 +436,10 @@ body{ font-family:$fontFamily-unbounded; font-weight:$fontWeight-400; color:$col
         padding-top:60px;
         padding-bottom:50px;
     }
+    .project-services .section-regular.projectss .title,
+    .project-services .section-regular.services .title{ font-size:2rem; }
+    .project-services .section-regular.services{ padding-top:1px; padding-bottom:50px; }
+    .project-services .section-regular.services .--our-services .--our-services-description{ line-height:1.5; }
     /*_________________________________________/#PROJECTS & SERVICES-SECTION*/
 }
 

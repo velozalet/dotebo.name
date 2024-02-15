@@ -74,7 +74,7 @@ document.addEventListener( 'DOMContentLoaded', function () { //console.log('init
 
 	let aboutSection = document.getElementById('about');
 	let headerNavbar = document.getElementById('header_navbar');
-	let imgLogoHeader = headerNavbar.querySelector('.navbar-brand > img'); console.log(imgLogoHeader);
+	let imgLogoHeader = headerNavbar.querySelector('.navbar-brand > img');
 
 	/**
 	 * Is element within visible region of a scrollable container

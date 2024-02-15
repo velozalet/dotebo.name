@@ -119,6 +119,17 @@ body {
       color: #00A9E2; }
       .section-regular.about .row--1 a.cst-link-arrow:hover:after, .section-regular.about .row--1 a.cst-link-arrow:focus:after, .section-regular.about .row--1 a.cst-link-arrow:active:after {
         content: url(/wp-content/themes/maxcanvas_child/img/arrw-i-right-blue.svg); }
+  .section-regular.about .row--2 .icon-container .icon-sub-container {
+    background-color: #FFFFFF;
+    border: 1px solid #676A76;
+    border-radius: 6px;
+    padding: 25px;
+    width: 102px;
+    height: 106px;
+    margin: 0 auto; }
+  .section-regular.about .row--2 .icon-container img {
+    width: 50px;
+    height: 54px; }
   .section-regular.about .row--2 .text-container p:nth-of-type(1) {
     font-size: 1.25rem;
     font-family: "Unbounded", sans-serif;
@@ -157,6 +168,7 @@ body {
       background-size: cover;
       /*contain | 100%*/
       background-repeat: no-repeat;
+      background-position: 50% 0;
       width: 100%;
       height: 100%;
       top: 0;
@@ -179,7 +191,7 @@ body {
       -webkit-text-fill-color: transparent;
       display: inline-block; }
     .project-services .section-regular.projectss .--our-projects .img-project > img {
-      border-radius: 10px;
+      border-radius: 12px;
       position: relative;
       z-index: 1; }
     .project-services .section-regular.projectss .--our-projects .img-project + p {
@@ -202,6 +214,68 @@ body {
       .project-services .section-regular.projectss .--our-projects .tags-project > span:last-of-type {
         margin-bottom: 0 !important;
         margin-right: 0 !important; }
+  .project-services .section-regular.services {
+    padding-top: 85px;
+    padding-bottom: 130px; }
+    .project-services .section-regular.services p.suptitle {
+      color: #FFFFFF;
+      font-weight: 400;
+      font-family: "Unbounded", sans-serif;
+      font-size: 1rem; }
+    .project-services .section-regular.services .title {
+      font-weight: 600;
+      font-family: "Unbounded", sans-serif;
+      font-size: 3rem;
+      background: linear-gradient(22deg, #C27FFF, #00A9E2);
+      background: -webkit-linear-gradient(72deg, #C27FFF, #00A9E2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block; }
+    .project-services .section-regular.services .--our-services .img-project {
+      border: 1px solid #676A76;
+      border-radius: 8px;
+      position: relative; }
+      .project-services .section-regular.services .--our-services .img-project .veil-service-block:after {
+        content: '';
+        position: absolute;
+        background-color: #010512;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        filter: blur(16px);
+        -webkit-filter: blur(16px);
+        opacity: 0.9; }
+      .project-services .section-regular.services .--our-services .img-project img {
+        position: relative;
+        z-index: 3; }
+    .project-services .section-regular.services .--our-services .--our-services-name-service {
+      color: #FFFFFF;
+      font-size: 1.88rem;
+      font-family: "Unbounded", sans-serif;
+      font-weight: 500;
+      line-height: 1.1; }
+    .project-services .section-regular.services .--our-services .--our-services-description {
+      color: #FFFFFF;
+      font-size: 1.0rem;
+      font-family: "Unbounded", sans-serif;
+      font-weight: 400;
+      line-height: 1.8; }
+    .project-services .section-regular.services .--our-services a.cst-link-arrow {
+      font-weight: 600;
+      font-family: "Unbounded", sans-serif;
+      font-size: 1.25rem;
+      color: #00A9E2;
+      position: relative;
+      z-index: 1; }
+      .project-services .section-regular.services .--our-services a.cst-link-arrow:after {
+        content: url(/wp-content/themes/maxcanvas_child/img/arrw-i-right-blue.svg);
+        margin-left: 9px; }
+      .project-services .section-regular.services .--our-services a.cst-link-arrow:hover, .project-services .section-regular.services .--our-services a.cst-link-arrow:focus, .project-services .section-regular.services .--our-services a.cst-link-arrow:active {
+        color: #231B64; }
+        .project-services .section-regular.services .--our-services a.cst-link-arrow:hover:after, .project-services .section-regular.services .--our-services a.cst-link-arrow:focus:after, .project-services .section-regular.services .--our-services a.cst-link-arrow:active:after {
+          content: url(/wp-content/themes/maxcanvas_child/img/arrw-i-right-d-blue.svg); }
 
 /*_________________________________________/#PROJECTS & SERVICES-SECTION*/
 /**
@@ -228,6 +302,9 @@ body {
   .project-services .veil:after {
     background-size: 100%; }
 
+  .project-services .section-regular.services {
+    padding-top: 45px; }
+
   /*_________________________________________/#PROJECTS & SERVICES-SECTION*/ }
 @media screen and (max-width: 767px) {
   /*from 767px till 576px (Class prefix .col-sm-)*/
@@ -248,8 +325,12 @@ body {
     display: inline-block;
     padding: 5px; }
 
-  .project-services .section-regular.projectss .--our-projects .img-project + p {
+  .project-services .section-regular.projectss .--our-projects .img-project + p,
+  .project-services .section-regular.services .--our-services .--our-services-name-service {
     font-size: 1.25rem; }
+
+  .project-services .section-regular.services .--our-services .--our-services-description {
+    font-size: 0.81rem; }
 
   /*_________________________________________/#PROJECTS & SERVICES-SECTION*/ }
 @media screen and (max-width: 575px) {
@@ -296,6 +377,17 @@ body {
   .project-services .section-regular.projectss {
     padding-top: 60px;
     padding-bottom: 50px; }
+
+  .project-services .section-regular.projectss .title,
+  .project-services .section-regular.services .title {
+    font-size: 2rem; }
+
+  .project-services .section-regular.services {
+    padding-top: 1px;
+    padding-bottom: 50px; }
+
+  .project-services .section-regular.services .--our-services .--our-services-description {
+    line-height: 1.5; }
 
   /*_________________________________________/#PROJECTS & SERVICES-SECTION*/ }
 @media screen and (max-width: 399px) {

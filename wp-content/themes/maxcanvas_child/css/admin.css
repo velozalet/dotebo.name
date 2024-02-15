@@ -1,3 +1,4 @@
 /*Dashicons custom color For Custom Posts Type*/
 #adminmenuwrap li#menu-posts-services .wp-menu-image.dashicons-before:before{ color:yellow; }
+.wp-admin #adminmenuwrap li#menu-posts-projects .wp-menu-image.dashicons-before:before{ color:#9933ff; }
 /*__/Dashicons custom color For Custom Posts Type*/

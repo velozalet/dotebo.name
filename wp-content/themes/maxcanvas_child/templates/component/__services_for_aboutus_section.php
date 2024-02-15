@@ -8,7 +8,13 @@ $serv_block_repeater_aboutUs = get_field('services_block_aboutUs', get_the_ID() 
 			<div class="col-lg-12 col-6 text-lg-start text-center mb-4">
 				<div class="row align-items-center">
 					<div class="icon-container col-lg-auto">
-						<img src="<?php echo $service_i['Icon__services_block2_aboutUs'];?>" alt="Dotebo Logo">
+						<?php if( $service_i['Icon__services_block2_aboutUs'] ):?>
+							<div class="icon-sub-container">
+								<img src="<?php echo $service_i['Icon__services_block2_aboutUs'];?>" alt="Dotebo Logo">
+							</div>
+						<?php else:?>
+							<img src="<?php echo get_stylesheet_directory_uri();?>/img/icon-about-3.png" alt="Dotebo">
+						<?php endif;?>
 					</div>
 					<div class="text-container col">
 						<p class="mt-lg-0 mt-2 mb-1"><?php echo $service_i['title__services_block_aboutus'];?></p>
