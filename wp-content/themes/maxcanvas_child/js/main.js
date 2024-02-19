@@ -1,5 +1,5 @@
 document.addEventListener( 'DOMContentLoaded', function () { //console.log('init');
-	//console.log(globalData);
+	console.log(globalData);
 
 	window.scrollTo({ top: 0, behavior: 'smooth' }); //On load the Page automatically scroll to top
 
@@ -49,7 +49,7 @@ document.addEventListener( 'DOMContentLoaded', function () { //console.log('init
 				nameIdSection = nameIdSection.substr(1);
 				targetBlockToScroll = document.getElementById( nameIdSection );
 				targetBlockToScroll.scrollIntoView({
-					block: "end",
+					//block: "end",
 					behavior: "smooth"
 				});
 			});
@@ -102,6 +102,51 @@ document.addEventListener( 'DOMContentLoaded', function () { //console.log('init
 		isScrolledIntoView(aboutSection);
 	});
 	/*_________________________________________/#BANNER-SECTION*/
+
+
+	/*___________________________________________#TESTIMONIALS-SECTION*/
+	/*Testimonials Slider*/
+	let testimonialSliderDOM = document.getElementById('__testimonials_slider');
+	const testimonialSliderSettings = {
+		isDisable: ( globalData.testimonialSliderDisable === '1') ? true : false,
+		pagination: ( globalData.isPaginationSetting === '1') ? true : false,
+		interval: ( globalData.testimonialsSliderSpeed ) ? Number( (globalData.testimonialsSliderSpeed * 1000) )  : 4000,
+		autoplay: ( globalData.isAutoplaySetting === '1') ? true : false,
+	};
+	if( testimonialSliderDOM ){
+		let testimonialSlider = new Splide( testimonialSliderDOM,{ //All settings: https://splidejs.com/guides/options
+			destroy: testimonialSliderSettings.isDisable,
+			type: 'loop', /*'slide'|'loop'|'fade'*/
+			pagination: testimonialSliderSettings.pagination,
+			autoplay: testimonialSliderSettings.autoplay,
+			speed: 3000,
+			omitEnd: true,
+			interval: testimonialSliderSettings.interval, /*testimonialSliderSettings.interval*/
+			arrows: false,
+			breakpoints: {
+				767: {
+					type: 'loop',
+					drag: true,
+				}
+			},
+		} ); testimonialSlider.mount();
+	}
+	/*__/Testimonials Slider*/
+
+	if( testimonialSliderSettings.isDisable ){ //console.log('Ebattttt');
+		let testimonialSlidesCollection = testimonialSliderDOM.querySelectorAll('ul.splide__list > li.splide__slide');
+		console.log(testimonialSlidesCollection);
+
+		testimonialSlidesCollection.forEach(
+			(item,index,collection) => {
+				if( index !== 0 ){
+					item.classList.add('slide-disabled');
+				}
+
+			}
+		);
+	}
+	/*_________________________________________/#TESTIMONIALS-SECTION*/
 });
 
 

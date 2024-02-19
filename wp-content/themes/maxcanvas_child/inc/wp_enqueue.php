@@ -27,7 +27,10 @@ if ( ! function_exists( 'maxcanvas_child_scripts_styles' ) ):
 		wp_localize_script('main-js','globalData', array(
 			'nonce' => wp_create_nonce('wp_rest'),
 			'siteURL' => get_site_url(),
-			'testStr' => 'This is test string...'
+			'testimonialSliderDisable' => get_field('is_disable_slider_setting', get_the_ID() ),
+			'isPaginationSetting' => get_field('is_pagination_seting', get_the_ID() ),
+			'testimonialsSliderSpeed' => get_field('testimonial_slider_speed', get_the_ID() ),
+			'isAutoplaySetting' => get_field('is_autoplay_settings', get_the_ID() ),
 		));
 	}
 endif;

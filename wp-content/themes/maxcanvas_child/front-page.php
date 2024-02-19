@@ -25,8 +25,11 @@ $optBtnLink_aboutUs = get_field('optional_button_link_aboutUs', get_the_ID() );
 //__/"Our Work(Projects)" Section
 
 //"Our Services" Section
-	//$services_cpt_collection = get_field('services_cpt_relationship', get_the_ID() );
 //__/"Our Services" Section
+
+//"Testimonials" Section
+$optBtnLink_testimonials = get_field('optional_button_link_testimonials', get_the_ID() );
+//__/"Testimonials" Section
 
 ?>
 
@@ -75,7 +78,6 @@ $optBtnLink_aboutUs = get_field('optional_button_link_aboutUs', get_the_ID() );
 			<div class="container-md">
 				<?php get_template_part('templates/component/__projects_cpt_for_project_section');?>
 			</div>
-			<div id="pro" class="d-block"></div>
 		</section>
 		<!--/"Our Work(Projects)" Section-->
 		<!--"Our Services" Section-->
@@ -93,12 +95,24 @@ $optBtnLink_aboutUs = get_field('optional_button_link_aboutUs', get_the_ID() );
 	</div> <!--.veil-->
 </section>
 
-<section id="technologies" class="section-regular section-regular-test technologies">
-	<h2 class="text-center">Technologies </h2>
+<section id="testimonials" class="section-regular testimonials">
+	<!--Testimonials Slider-->
+	<?php get_template_part('templates/component/__testimonials');?>
+	<!--/Testimonials Slider-->
+	<div class="container-md px-lg-5 mt-2 text-lg-start text-center">
+		<?php if($optBtnLink_testimonials): $link_target = ($optBtnLink_testimonials['target']) ? $optBtnLink_testimonials['target'] : '_self';?>
+			<a class="cst-link-arrow px-lg-5" href="<?php echo $optBtnLink_testimonials['url'];?>" target="<?php echo esc_attr($link_target);?>"><?php echo $optBtnLink_testimonials['title'];?></a>
+		<?php endif;?>
+	</div>
 </section>
 
-<section id="tools" class="section-regular section-regular-test tools">
+
+
+
+
+<section id="technologies" class="section-regular section-regular-test technologies">
 	<h2 class="text-center">Our tools </h2>
+	<h2 class="text-center">Technologies </h2>
 </section>
 
 <section id="contact" class="section-regular section-regular-test contact">

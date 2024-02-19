@@ -278,6 +278,45 @@ body {
           content: url(/wp-content/themes/maxcanvas_child/img/arrw-i-right-d-blue.svg); }
 
 /*_________________________________________/#PROJECTS & SERVICES-SECTION*/
+/*___________________________________________#TESTIMONIALS-SECTION*/
+.testimonials {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .testimonials .__testimonials-slider li.splide__slide .testimonials-review {
+    font-size: 1.88rem;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 500;
+    line-height: 1.8; }
+    .testimonials .__testimonials-slider li.splide__slide .testimonials-review + p {
+      font-size: 1.5rem;
+      font-family: "Unbounded", sans-serif;
+      font-weight: 500;
+      margin-bottom: 60px; }
+  .testimonials .__testimonials-slider li.splide__slide.slide-disabled {
+    display: none; }
+  .testimonials .__testimonials-slider ul.splide__pagination li {
+    margin-right: 6px; }
+    .testimonials .__testimonials-slider ul.splide__pagination li .splide__pagination__page {
+      transform: scale(1.5);
+      background: #676A76; }
+      .testimonials .__testimonials-slider ul.splide__pagination li .splide__pagination__page.is-active {
+        transform: scale(1.9);
+        background: #00A9E2;
+        opacity: 1; }
+  .testimonials a.cst-link-arrow {
+    font-weight: 600;
+    font-family: "Unbounded", sans-serif;
+    font-size: 1.25rem;
+    color: #231B64; }
+    .testimonials a.cst-link-arrow:after {
+      content: url(/wp-content/themes/maxcanvas_child/img/arrw-i-right-d-blue.svg);
+      margin-left: 9px; }
+    .testimonials a.cst-link-arrow:hover, .testimonials a.cst-link-arrow:focus, .testimonials a.cst-link-arrow:active {
+      color: #00A9E2; }
+      .testimonials a.cst-link-arrow:hover:after, .testimonials a.cst-link-arrow:focus:after, .testimonials a.cst-link-arrow:active:after {
+        content: url(/wp-content/themes/maxcanvas_child/img/arrw-i-right-blue.svg); }
+
+/*_________________________________________/#TESTIMONIALS-SECTION*/
 /**
 	MEDIA QUERIES:  project_services
 */
@@ -305,7 +344,25 @@ body {
   .project-services .section-regular.services {
     padding-top: 45px; }
 
-  /*_________________________________________/#PROJECTS & SERVICES-SECTION*/ }
+  /*_________________________________________/#PROJECTS & SERVICES-SECTION*/
+  /*_________________________________________#TESTIMONIALS-SECTION*/
+  .testimonials {
+    padding-top: 45px;
+    padding-bottom: 45px; }
+
+  .testimonials .__testimonials-slider li.splide__slide .testimonials-review {
+    font-size: 1.12rem;
+    line-height: 1.5; }
+
+  .testimonials .__testimonials-slider li.splide__slide .testimonials-review + p {
+    font-size: 1.12rem;
+    line-height: 1.3;
+    margin-bottom: 35px; }
+
+  .testimonials a.cst-link-arrow {
+    font-size: 1.22rem; }
+
+  /*_________________________________________/#TESTIMONIALS-SECTION*/ }
 @media screen and (max-width: 767px) {
   /*from 767px till 576px (Class prefix .col-sm-)*/
   #breakpoint_check {
