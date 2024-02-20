@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/wp-content/themes/maxcanvas_child/css/main.scss" line="14" mnemonic="0" />
-    <bookmark url="file://$PROJECT_DIR$/wp-content/themes/maxcanvas_child/css/main.scss" line="81" mnemonic="1" />
-    <bookmark url="file://$PROJECT_DIR$/wp-content/themes/maxcanvas_child/css/main.scss" line="465" mnemonic="9" />
+    <bookmark url="file://$PROJECT_DIR$/wp-content/themes/maxcanvas_child/css/main.scss" line="82" mnemonic="1" />
+    <bookmark url="file://$PROJECT_DIR$/wp-content/themes/maxcanvas_child/css/main.scss" line="486" mnemonic="9" />
+    <bookmark url="file://$PROJECT_DIR$/wp-content/themes/maxcanvas_child/css/main.scss" line="24" mnemonic="0" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1ebcb2d-4f94-4ed1-89cd-596695c5df3e" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/access.log" beforeDir="false" afterPath="$PROJECT_DIR$/access.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/backupwordpress-0cad8dfdaa-backups/.files" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/backupwordpress-0cad8dfdaa-backups/.files" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/backupwordpress-0cad8dfdaa-backups/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/backupwordpress-0cad8dfdaa-backups/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/maxcanvas_child.zip" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/maxcanvas_child.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/maxcanvas_child/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/maxcanvas_child/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/maxcanvas_child/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/maxcanvas_child/css/main.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/maxcanvas_child/css/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/maxcanvas_child/css/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/maxcanvas_child/front-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/maxcanvas_child/front-page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/maxcanvas_child/templates/component/__our_offers_plans.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/maxcanvas_child/templates/component/__our_offers_plans.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/maxcanvas_child/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/maxcanvas_child/js/main.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,8 +31,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/maxcanvas_child/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="35" selection-start-line="9" selection-start-column="37" selection-end-line="10" selection-end-column="35" />
+            <state relative-caret-position="538">
+              <caret line="176" selection-start-line="176" selection-end-line="176" />
             </state>
           </provider>
         </entry>
@@ -35,8 +40,8 @@
       <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/maxcanvas_child/css/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="413" column="37" selection-start-line="413" selection-start-column="37" selection-end-line="413" selection-end-column="37" />
+            <state relative-caret-position="610">
+              <caret line="578" column="74" selection-start-line="578" selection-start-column="74" selection-end-line="578" selection-end-column="74" />
             </state>
           </provider>
         </entry>
@@ -44,25 +49,33 @@
       <file leaf-file-name="front-page.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/maxcanvas_child/front-page.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="728">
-              <caret line="121" column="51" selection-start-line="121" selection-start-column="51" selection-end-line="121" selection-end-column="51" />
+            <state relative-caret-position="128">
+              <caret line="33" selection-start-line="33" selection-end-line="33" selection-end-column="35" />
               <folding>
                 <element signature="e#6#61#0#PHP" expanded="true" />
                 <element signature="n#section#0;n#!!top" />
                 <element signature="n#section#1;n#!!top" />
+                <element signature="n#section#2;n#!!top" />
+                <element signature="n#section#3;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__our_offers_plans.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/maxcanvas_child/templates/component/__our_offers_plans.php">
+      <file leaf-file-name="__our_technologies_mobile.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/maxcanvas_child/templates/component/__our_technologies_mobile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="41" lean-forward="true" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="82">
+              <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__our_technologies_desktop.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/maxcanvas_child/templates/component/__our_technologies_desktop.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="69" selection-start-line="8" selection-start-column="69" selection-end-line="8" selection-end-column="91" />
             </state>
           </provider>
         </entry>
@@ -87,6 +100,7 @@
       <find>icon-about-3</find>
       <find>$optional</find>
       <find>background-image</find>
+      <find>technologies-block</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -114,10 +128,12 @@
         <option value="$PROJECT_DIR$/wp-content/themes/maxcanvas_child/templates/component/__services_cpt_for_services_section.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/maxcanvas_child/inc/wp_enqueue.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/maxcanvas_child/templates/component/__testimonials.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/maxcanvas_child/templates/component/__our_offers_plans.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/maxcanvas_child/js/main.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/maxcanvas_child/templates/component/__our_technologies_desktop.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/maxcanvas_child/templates/component/__our_technologies_mobile.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/maxcanvas_child/front-page.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/maxcanvas_child/css/main.scss" />
-        <option value="$PROJECT_DIR$/wp-content/themes/maxcanvas_child/templates/component/__our_offers_plans.php" />
       </list>
     </option>
   </component>
@@ -142,7 +158,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -221,6 +236,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -272,28 +288,27 @@
       <workItem from="1708137113289" duration="7450000" />
       <workItem from="1708222984488" duration="7799000" />
       <workItem from="1708310988883" duration="599000" />
-      <workItem from="1708355382860" duration="26961000" />
+      <workItem from="1708355382860" duration="35363000" />
+      <workItem from="1708440898858" duration="9368000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="218709000" />
+    <option name="totallyTimeSpent" value="236479000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1533" height="875" extended-state="6" />
-    <editor active="true" />
     <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.19569603" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32884097" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.6657682" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.19569603" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.42587602" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.6657682" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -302,24 +317,25 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.42587602" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24949563" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="7" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.3293011" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="bottom" id="Terminal" order="2" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -331,21 +347,18 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/wp-content/themes/maxcanvas_child/front-page.php</url>
+          <line>43</line>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/maxcanvas_child/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/maxcanvas_child/css/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1805">
-          <caret line="95" selection-start-line="95" selection-end-line="95" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/maxcanvas_child/front-page.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1311">
@@ -354,6 +367,8 @@
             <element signature="e#6#61#0#PHP" expanded="true" />
             <element signature="n#section#0;n#!!top" />
             <element signature="n#section#1;n#!!top" />
+            <element signature="n#section#2;n#!!top" />
+            <element signature="n#section#3;n#!!top" />
           </folding>
         </state>
       </provider>
@@ -394,6 +409,8 @@
             <element signature="e#6#61#0#PHP" expanded="true" />
             <element signature="n#section#0;n#!!top" />
             <element signature="n#section#1;n#!!top" />
+            <element signature="n#section#2;n#!!top" />
+            <element signature="n#section#3;n#!!top" />
           </folding>
         </state>
       </provider>
@@ -441,6 +458,8 @@
             <element signature="e#6#61#0#PHP" expanded="true" />
             <element signature="n#section#0;n#!!top" />
             <element signature="n#section#1;n#!!top" />
+            <element signature="n#section#2;n#!!top" />
+            <element signature="n#section#3;n#!!top" />
           </folding>
         </state>
       </provider>
@@ -488,6 +507,8 @@
             <element signature="e#6#61#0#PHP" expanded="true" />
             <element signature="n#section#0;n#!!top" />
             <element signature="n#section#1;n#!!top" />
+            <element signature="n#section#2;n#!!top" />
+            <element signature="n#section#3;n#!!top" />
           </folding>
         </state>
       </provider>
@@ -622,46 +643,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/maxcanvas_child/js/main.js">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/maxcanvas_child/templates/component/__our_offers_plans.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="35" selection-start-line="9" selection-start-column="37" selection-end-line="10" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/maxcanvas_child/css/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="413" column="37" selection-start-line="413" selection-start-column="37" selection-end-line="413" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/maxcanvas_child/front-page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="728">
-          <caret line="121" column="51" selection-start-line="121" selection-start-column="51" selection-end-line="121" selection-end-column="51" />
-          <folding>
-            <element signature="e#6#61#0#PHP" expanded="true" />
-            <element signature="n#section#0;n#!!top" />
-            <element signature="n#section#1;n#!!top" />
-          </folding>
+        <state relative-caret-position="304">
+          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/maxcanvas_child/templates/component/__testimonials.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        <state relative-caret-position="171">
+          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/maxcanvas_child/templates/component/__our_offers_plans.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/maxcanvas_child/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="41" lean-forward="true" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+        <state relative-caret-position="538">
+          <caret line="176" selection-start-line="176" selection-end-line="176" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/maxcanvas_child/templates/component/__our_technologies_desktop.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="69" selection-start-line="8" selection-start-column="69" selection-end-line="8" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/maxcanvas_child/css/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="610">
+          <caret line="578" column="74" selection-start-line="578" selection-start-column="74" selection-end-line="578" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/maxcanvas_child/front-page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="33" selection-start-line="33" selection-end-line="33" selection-end-column="35" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#6#61#0#PHP" expanded="true" />
+            <element signature="n#section#0;n#!!top" />
+            <element signature="n#section#1;n#!!top" />
+            <element signature="n#section#2;n#!!top" />
+            <element signature="n#section#3;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/maxcanvas_child/templates/component/__our_technologies_mobile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
         </state>
       </provider>
     </entry>

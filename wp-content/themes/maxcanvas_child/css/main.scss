@@ -6,6 +6,7 @@ $color-violet: #C27FFF;
 $color-blue: #00A9E2;
 $color-dark-blue: #231B64;
 $color-gray: #676A76;
+$color-light-gray: #E3E4E7;
 
 $fontFamily-poppins: 'Poppins', sans-serif;
 $fontFamily-unbounded: 'Unbounded', sans-serif;
@@ -373,7 +374,7 @@ body{ font-family:$fontFamily-unbounded; font-weight:$fontWeight-400; color:$col
 
 /*___________________________________________#TESTIMONIALS-SECTION*/
 .testimonials{
-    padding-top:100px; padding-bottom:100px;
+    padding-top:100px; padding-bottom:50px;
 
     .__testimonials-slider{
         li.splide__slide{
@@ -466,7 +467,25 @@ body{ font-family:$fontFamily-unbounded; font-weight:$fontWeight-400; color:$col
 }
 /*_________________________________________/#TESTIMONIALS-SECTION*/
 
-
+/*_________________________________________/#TECHNOLOGIES-SECTION*/
+.section-regular.technologies{
+    padding-bottom:90px;
+    .suptitle{
+        @include suptitle-black-unbounded;
+    }
+    .title{
+        @include title-unbounded;
+        color: $color-dark-blue;
+    }
+    .technologies-block{
+        .technologies--item{
+            border:1px solid $color-light-gray;
+            border-radius:6px;
+            padding:20px 0;
+        }
+    }
+}
+/*_________________________________________/#TECHNOLOGIES-SECTION*/
 
 
 /**
@@ -487,7 +506,7 @@ body{ font-family:$fontFamily-unbounded; font-weight:$fontWeight-400; color:$col
     /*_________________________________________/#PROJECTS & SERVICES-SECTION*/
 
     /*_________________________________________#TESTIMONIALS-SECTION*/
-    .testimonials { padding-top:45px; padding-bottom:45px; }
+    .testimonials { padding-top:45px; padding-bottom:25px; }
     .testimonials .__testimonials-slider li.splide__slide .testimonials-review{
         font-size:1.12rem;
         line-height:1.5;
@@ -553,6 +572,11 @@ body{ font-family:$fontFamily-unbounded; font-weight:$fontWeight-400; color:$col
     .project-services .section-regular.services{ padding-top:1px; padding-bottom:50px; }
     .project-services .section-regular.services .--our-services .--our-services-description{ line-height:1.5; }
     /*_________________________________________/#PROJECTS & SERVICES-SECTION*/
+
+    /*_________________________________________#OUR TOOLS(TECHNOLOGIES)*/
+    .section-regular.technologies .title{ font-size:2rem; }
+    .section-regular.technologies{ padding-bottom:50px; }
+    /*_________________________________________/#OUR TOOLS(TECHNOLOGIES)*/
 }
 
 @media screen and (max-width: 399px) {

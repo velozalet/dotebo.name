@@ -50,3 +50,14 @@
 [Mon Feb 19 11:28:24.932998 2024] [php7:notice] [pid 10109] [client 127.0.0.1:57566] PHP Notice:  Undefined variable: testimonials_slider in /var/www/dotebo.name/wp-content/themes/maxcanvas_child/front-page.php on line 102
 [Mon Feb 19 11:28:24.933500 2024] [php7:notice] [pid 10109] [client 127.0.0.1:57566] PHP Notice:  Undefined variable: optBtnLink_testimonials in /var/www/dotebo.name/wp-content/themes/maxcanvas_child/front-page.php on line 130
 [Mon Feb 19 11:29:08.406080 2024] [php7:notice] [pid 9870] [client 127.0.0.1:56048] PHP Notice:  Undefined variable: optBtnLink_testimonials in /var/www/dotebo.name/wp-content/themes/maxcanvas_child/front-page.php on line 101
+[Tue Feb 20 09:30:39.972172 2024] [php7:notice] [pid 9824] [client 127.0.0.1:59058] PHP Notice:  Undefined index: $i in /var/www/dotebo.name/wp-content/themes/maxcanvas_child/front-page.php on line 137
+[Tue Feb 20 09:30:39.972761 2024] [php7:notice] [pid 9824] [client 127.0.0.1:59058] PHP Notice:  Undefined index: $i in /var/www/dotebo.name/wp-content/themes/maxcanvas_child/front-page.php on line 137
+[Tue Feb 20 09:30:39.972780 2024] [php7:notice] [pid 9824] [client 127.0.0.1:59058] PHP Notice:  Undefined index: $i in /var/www/dotebo.name/wp-content/themes/maxcanvas_child/front-page.php on line 137
+[Tue Feb 20 09:30:39.972789 2024] [php7:notice] [pid 9824] [client 127.0.0.1:59058] PHP Notice:  Undefined index: $i in /var/www/dotebo.name/wp-content/themes/maxcanvas_child/front-page.php on line 137
+[Tue Feb 20 09:30:39.972795 2024] [php7:notice] [pid 9824] [client 127.0.0.1:59058] PHP Notice:  Undefined index: $i in /var/www/dotebo.name/wp-content/themes/maxcanvas_child/front-page.php on line 137
+[Tue Feb 20 09:30:39.972802 2024] [php7:notice] [pid 9824] [client 127.0.0.1:59058] PHP Notice:  Undefined index: $i in /var/www/dotebo.name/wp-content/themes/maxcanvas_child/front-page.php on line 137
+[Tue Feb 20 09:30:39.972808 2024] [php7:notice] [pid 9824] [client 127.0.0.1:59058] PHP Notice:  Undefined index: $i in /var/www/dotebo.name/wp-content/themes/maxcanvas_child/front-page.php on line 137
+[Tue Feb 20 09:30:39.972815 2024] [php7:notice] [pid 9824] [client 127.0.0.1:59058] PHP Notice:  Undefined index: $i in /var/www/dotebo.name/wp-content/themes/maxcanvas_child/front-page.php on line 137
+[Tue Feb 20 09:30:39.972821 2024] [php7:notice] [pid 9824] [client 127.0.0.1:59058] PHP Notice:  Undefined index: $i in /var/www/dotebo.name/wp-content/themes/maxcanvas_child/front-page.php on line 137
+[Tue Feb 20 09:30:39.973016 2024] [php7:notice] [pid 9824] [client 127.0.0.1:59058] PHP Notice:  Undefined index: $i in /var/www/dotebo.name/wp-content/themes/maxcanvas_child/front-page.php on line 137
+[Tue Feb 20 09:30:39.973033 2024] [php7:notice] [pid 9824] [client 127.0.0.1:59058] PHP Notice:  Undefined index: $i in /var/www/dotebo.name/wp-content/themes/maxcanvas_child/front-page.php on line 137

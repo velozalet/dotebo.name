@@ -31,6 +31,10 @@ $optBtnLink_aboutUs = get_field('optional_button_link_aboutUs', get_the_ID() );
 $optBtnLink_testimonials = get_field('optional_button_link_testimonials', get_the_ID() );
 //__/"Testimonials" Section
 
+//"Our Tools(Technologies)" Section
+$suptitle_ourtools = get_field('suptitle_ourtools', get_the_ID() );
+$title_ourtools = get_field('title_ourtools', get_the_ID() );
+//__/"Our Tools(Technologies)" Section
 ?>
 
 <section id="about" class="section-regular about">
@@ -112,20 +116,31 @@ $optBtnLink_testimonials = get_field('optional_button_link_testimonials', get_th
 	</div>
 </section>
 
-
-
-
-
 <section id="technologies" class="section-regular technologies">
-	<div class="container-md pt-md-0 pt-0 pb-md-0 pb-0">
+	<div class="container-lg pt-md-0 pt-0 pb-md-0 pb-0">
 		<div class="row align-items-center">
-			<h2 class="text-center">Our tools </h2>
-			<h2 class="text-center">Technologies we work With </h2>
+			<p class="suptitle text-uppercase mb-3 text-center"><?php echo($suptitle_ourtools) ? $suptitle_ourtools : 'our tools';?></p>
+			<div class="text-center">
+				<h2 class="title text-capitalize mb-2"><?php echo($title_ourtools) ? $title_ourtools : 'technologies we work with';?></h2>
+			</div>
+			
+			<div class="container-lg mt-md-4 mt-3 technologies-block">
+				<!--desktop version-->
+				<?php get_template_part('templates/component/__our_technologies_desktop');?>
+				<!--/desktop version-->
+
+				<!--mobile version-->
+				<?php get_template_part('templates/component/__our_technologies_mobile');?>
+				<!--/mobile version-->
+			</div>
 		</div><!--/row-->
 	</div>
 </section>
 
-<section id="contact" class="section-regular section-regular-test contact">
+
+
+
+<section id="contact" class="section-regular contact">
 	<h2 class="text-center"> contact Us </h2>
 </section>
 

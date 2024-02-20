@@ -103,7 +103,6 @@ document.addEventListener( 'DOMContentLoaded', function () { //console.log('init
 	});
 	/*_________________________________________/#BANNER-SECTION*/
 
-
 	/*___________________________________________#TESTIMONIALS-SECTION*/
 	/*Testimonials Slider*/
 	let testimonialSliderDOM = document.getElementById('__testimonials_slider');
@@ -147,7 +146,33 @@ document.addEventListener( 'DOMContentLoaded', function () { //console.log('init
 		);
 	}
 	/*_________________________________________/#TESTIMONIALS-SECTION*/
-});
 
+	/*_________________________________________#TECHNOLOGIES-SECTION*/
+	let technologiesSliderDOM = document.getElementById('__technologies_slider');
+	if( technologiesSliderDOM ){
+		let technologiesSlider = new Splide( technologiesSliderDOM,{ //All settings: https://splidejs.com/guides/options
+			type: 'loop', /*'slide'|'loop'|'fade'*/
+			perPage: 4,
+			focus  : 0,
+			omitEnd: true,
+			pagination: false,
+			autoplay: true,
+			speed: 2000,
+			interval: 2000,
+			arrows: false,
+			breakpoints: {
+				575: {
+					perPage: 3,
+				},
+				399: {
+					perPage: 2,
+				},
+			},
+		} ); technologiesSlider.mount();
+	}
+
+	/*_________________________________________/#TECHNOLOGIES-SECTION*/
+
+});
 
 new WOW().init(); //initial the WOW animation library

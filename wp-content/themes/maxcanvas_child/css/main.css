@@ -281,7 +281,7 @@ body {
 /*___________________________________________#TESTIMONIALS-SECTION*/
 .testimonials {
   padding-top: 100px;
-  padding-bottom: 100px; }
+  padding-bottom: 50px; }
   .testimonials .__testimonials-slider li.splide__slide .testimonials-review {
     font-size: 1.88rem;
     font-family: "Unbounded", sans-serif;
@@ -360,6 +360,25 @@ body {
       border-radius: 9px; }
 
 /*_________________________________________/#TESTIMONIALS-SECTION*/
+/*_________________________________________/#TECHNOLOGIES-SECTION*/
+.section-regular.technologies {
+  padding-bottom: 90px; }
+  .section-regular.technologies .suptitle {
+    color: #010512;
+    font-weight: 400;
+    font-family: "Unbounded", sans-serif;
+    font-size: 1rem; }
+  .section-regular.technologies .title {
+    font-weight: 600;
+    font-family: "Unbounded", sans-serif;
+    font-size: 3rem;
+    color: #231B64; }
+  .section-regular.technologies .technologies-block .technologies--item {
+    border: 1px solid #E3E4E7;
+    border-radius: 6px;
+    padding: 20px 0; }
+
+/*_________________________________________/#TECHNOLOGIES-SECTION*/
 /**
 	MEDIA QUERIES:  project_services
 */
@@ -391,7 +410,7 @@ body {
   /*_________________________________________#TESTIMONIALS-SECTION*/
   .testimonials {
     padding-top: 45px;
-    padding-bottom: 45px; }
+    padding-bottom: 25px; }
 
   .testimonials .__testimonials-slider li.splide__slide .testimonials-review {
     font-size: 1.12rem;
@@ -489,7 +508,15 @@ body {
   .project-services .section-regular.services .--our-services .--our-services-description {
     line-height: 1.5; }
 
-  /*_________________________________________/#PROJECTS & SERVICES-SECTION*/ }
+  /*_________________________________________/#PROJECTS & SERVICES-SECTION*/
+  /*_________________________________________#OUR TOOLS(TECHNOLOGIES)*/
+  .section-regular.technologies .title {
+    font-size: 2rem; }
+
+  .section-regular.technologies {
+    padding-bottom: 50px; }
+
+  /*_________________________________________/#OUR TOOLS(TECHNOLOGIES)*/ }
 @media screen and (max-width: 399px) {
   #breakpoint_check {
     width: 399px; }
