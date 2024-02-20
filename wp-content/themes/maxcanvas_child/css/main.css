@@ -315,6 +315,51 @@ body {
       color: #00A9E2; }
       .testimonials a.cst-link-arrow:hover:after, .testimonials a.cst-link-arrow:focus:after, .testimonials a.cst-link-arrow:active:after {
         content: url(/wp-content/themes/maxcanvas_child/img/arrw-i-right-blue.svg); }
+  .testimonials .our-tools {
+    padding-top: 100px; }
+    .testimonials .our-tools .item-offer-block {
+      background-image: url(http://dotebo.name/wp-content/uploads/2024/02/offer-plan-bg.png);
+      background-size: contain;
+      /*contain | 100%*/
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      border: 1px solid #231B64;
+      padding: 20px 30px;
+      border-radius: 9px; }
+      .testimonials .our-tools .item-offer-block h3 {
+        color: #000000;
+        font-size: 1.88rem;
+        font-family: "Unbounded", sans-serif;
+        font-weight: 500;
+        line-height: 1.1; }
+        .testimonials .our-tools .item-offer-block h3 + p {
+          color: #000000;
+          font-size: 1.0rem;
+          font-family: "Unbounded", sans-serif;
+          font-weight: 400;
+          line-height: 1.5; }
+      .testimonials .our-tools .item-offer-block ul {
+        list-style: none;
+        list-style-type: none; }
+        .testimonials .our-tools .item-offer-block ul li .--item-offer {
+          color: #000000;
+          font-size: 0.88rem;
+          font-family: "Unbounded", sans-serif;
+          font-weight: 300; }
+        .testimonials .our-tools .item-offer-block ul li .--item-offer-value {
+          color: #000000;
+          font-size: 0.88rem;
+          font-family: "Unbounded", sans-serif;
+          font-weight: 600; }
+      .testimonials .our-tools .item-offer-block .--item-offer-price {
+        color: #000000;
+        font-size: 3rem;
+        font-family: "Unbounded", sans-serif;
+        font-weight: 600; }
+    .testimonials .our-tools .item-offer-block-choose-plan {
+      border: 1px solid #231B64;
+      padding: 35px 0;
+      border-radius: 9px; }
 
 /*_________________________________________/#TESTIMONIALS-SECTION*/
 /**
@@ -455,6 +500,17 @@ body {
   .section-regular.banner .banner--text-info p.text-capitalize {
     font-size: 3.06rem; }
 
-  /*_________________________________________/#BANNER-SECTION*/ }
+  /*_________________________________________/#BANNER-SECTION*/
+  /*_________________________________________/#TESTIMONIALS-SECTION*/
+  .testimonials .our-tools {
+    padding-top: 65px; }
+
+  .testimonials .our-tools .item-offer-block {
+    padding: 15px 15px; }
+
+  .testimonials .our-tools .item-offer-block-choose-plan {
+    padding: 15px 0; }
+
+  /*_________________________________________/#TESTIMONIALS-SECTION*/ }
 
 /*# sourceMappingURL=main.css.map */

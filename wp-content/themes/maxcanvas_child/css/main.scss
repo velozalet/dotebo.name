@@ -392,7 +392,6 @@ body{ font-family:$fontFamily-unbounded; font-weight:$fontWeight-400; color:$col
             }
             &.slide-disabled{ display:none; }
         }
-
         ul.splide__pagination{
             li{
                 margin-right: 6px;
@@ -405,9 +404,65 @@ body{ font-family:$fontFamily-unbounded; font-weight:$fontWeight-400; color:$col
             }
         }
     }
-
     a.cst-link-arrow{
         @include cst-link-arrow-d-blue;
+    }
+
+    .our-tools{
+        padding-top:100px;
+        .item-offer-block{
+            background-image: url(http://dotebo.name/wp-content/uploads/2024/02/offer-plan-bg.png);
+            background-size: contain; /*contain | 100%*/
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+
+            border:1px solid $color-dark-blue;
+            padding:20px 30px;
+            border-radius:9px;
+
+            h3{
+                color:$color-black;
+                font-size:1.88rem;
+                font-family: $fontFamily-unbounded;
+                font-weight: $fontWeight-500;
+                line-height:1.1;
+                +p{
+                    color:$color-black;
+                    font-size:1.0rem;
+                    font-family: $fontFamily-unbounded;
+                    font-weight: $fontWeight-400;
+                    line-height:1.5;
+                }
+            }
+            ul{
+                list-style:none; list-style-type:none;
+                li{
+                    .--item-offer{
+                        color:$color-black;
+                        font-size:0.88rem;
+                        font-family: $fontFamily-unbounded;
+                        font-weight: $fontWeight-300;
+                    }
+                    .--item-offer-value{
+                        color:$color-black;
+                        font-size:0.88rem;
+                        font-family: $fontFamily-unbounded;
+                        font-weight: $fontWeight-600;
+                    }
+                }
+            }
+            .--item-offer-price{
+                color:$color-black;
+                font-size:3rem;
+                font-family: $fontFamily-unbounded;
+                font-weight: $fontWeight-600;
+            }
+        }
+        .item-offer-block-choose-plan{
+            border:1px solid $color-dark-blue;
+            padding: 35px 0;
+            border-radius:9px;
+        }
     }
 }
 /*_________________________________________/#TESTIMONIALS-SECTION*/
@@ -507,4 +562,10 @@ body{ font-family:$fontFamily-unbounded; font-weight:$fontWeight-400; color:$col
     /*___________________________________________#BANNER-SECTION*/
     .section-regular.banner .banner--text-info p.text-capitalize{ font-size:3.06rem; }
     /*_________________________________________/#BANNER-SECTION*/
+
+    /*_________________________________________/#TESTIMONIALS-SECTION*/
+    .testimonials .our-tools { padding-top: 65px; }
+    .testimonials .our-tools .item-offer-block{ padding:15px 15px; }
+    .testimonials .our-tools .item-offer-block-choose-plan{ padding:15px 0; }
+    /*_________________________________________/#TESTIMONIALS-SECTION*/
 }

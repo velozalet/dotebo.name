@@ -1,7 +1,7 @@
 document.addEventListener( 'DOMContentLoaded', function () { //console.log('init');
 	console.log(globalData);
 
-	window.scrollTo({ top: 0, behavior: 'smooth' }); //On load the Page automatically scroll to top
+	//window.scrollTo({ top: 0, behavior: 'smooth' }); //On load the Page automatically scroll to top
 
 	/*Check Display Screen breakpoint*/
 	const cssElem = window.getComputedStyle( document.getElementById("breakpoint_check"), null );
