@@ -411,8 +411,7 @@ body{ font-family:$fontFamily-unbounded; font-weight:$fontWeight-400; color:$col
     .our-tools{
         padding-top:100px;
         .item-offer-block{
-            background-image: url(http://dotebo.name/wp-content/uploads/2024/02/offer-plan-bg.png);
-            background-size: contain; /*contain | 100%*/
+            background-size: contain;
             background-repeat: no-repeat;
             background-position: 50% 50%;
 

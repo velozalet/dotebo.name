@@ -318,9 +318,7 @@ body {
   .testimonials .our-tools {
     padding-top: 100px; }
     .testimonials .our-tools .item-offer-block {
-      background-image: url(http://dotebo.name/wp-content/uploads/2024/02/offer-plan-bg.png);
       background-size: contain;
-      /*contain | 100%*/
       background-repeat: no-repeat;
       background-position: 50% 50%;
       border: 1px solid #231B64;
