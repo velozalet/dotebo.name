@@ -9,8 +9,9 @@
 
 <?php
 //"General(Options)" Settings
-$copyright_text = get_field('copyright_text','options'); //dd($copyright_text);
+$copyright_text = get_field('copyright_text','options');
 $social_links = get_field('social_links','options');
+$contactInfo = get_field('сontact_Info_group','options');
 //__/General(Options)" Settings
 
 //"About Us" Section
@@ -35,6 +36,13 @@ $optBtnLink_testimonials = get_field('optional_button_link_testimonials', get_th
 $suptitle_ourtools = get_field('suptitle_ourtools', get_the_ID() );
 $title_ourtools = get_field('title_ourtools', get_the_ID() );
 //__/"Our Tools(Technologies)" Section
+
+//"Contact Us" Section
+$suptitle_contactus = get_field('suptitle_contactus', get_the_ID() );
+$title_contactus = get_field('title_contactus', get_the_ID() );
+$bg_contactus_section = get_field('bg_contactus_section', get_the_ID() );
+if( $bg_contactus_section ){ $bg_contactusUrl = $bg_contactus_section;}else{ $bg_contactusUrl = get_stylesheet_directory_uri().'/img/contact-bg.jpg" alt="Contact Us background Dotebo'; }
+//__/"Contact Us" Section
 ?>
 
 <section id="about" class="section-regular about">
@@ -137,11 +145,65 @@ $title_ourtools = get_field('title_ourtools', get_the_ID() );
 	</div>
 </section>
 
+<section id="contact" class="section-regular contact" style="background-image: url(<?php echo $bg_contactusUrl;?>);">
+	<div class="container-lg pt-md-0 pt-0 pb-md-0 pb-0">
+		<p class="suptitle text-uppercase mb-3"><?php echo($suptitle_contactus) ? $suptitle_contactus : 'contact us';?></p>
+		<div class="mb-4">
+			<h2 class="title text-capitalize mb-2"><?php echo($title_contactus) ? $title_contactus : 'let is talk';?></h2>
+		</div>
+	</div><!--/container-lg-->
 
+	<div class="container-lg pt-md-0 pt-0 pb-md-0 pb-0">
+		<div class="row">
+			<div class="col-lg-8 col-md-7 --contact-cf">
+				<?php echo do_shortcode('[contact-form-7 id="255" title="Contact form 1"]');?>
+			</div>
+			<div class="col-lg-4 col-md-5 ps-md-5 mb-lg-0 mb-5 --contact-info">
+				<div class="row">
+					<div class="col-md-12 col-6 mt-md-0 mt-5">
+						<?php if( $contactInfo && $contactInfo['сontact_Info_tell'] ):?>
+						<span class="ps-lg-5 d-block fw-bolder mb-2">Phone</span>
+						<span class="ps-lg-5 d-block mb-md-5 mb-4">
+							<a class="text-decoration-none" href="tel:<?php echo $contactInfo['сontact_Info_tell'];?>"><?php echo $contactInfo['сontact_Info_tell'];?></a>
+						</span>
+						<?php endif;?>
 
-
-<section id="contact" class="section-regular contact">
-	<h2 class="text-center"> contact Us </h2>
+						<?php if( $contactInfo && $contactInfo['сontact_Info_mail'] ):?>
+							<span class="ps-lg-5 d-block fw-bolder mb-2">Email</span>
+							<span class="ps-lg-5 d-block">
+								<a class="text-decoration-none" href="mailto:<?php echo $contactInfo['сontact_Info_mail'];?>"><?php echo $contactInfo['сontact_Info_mail'];?></a>
+							</span>
+						<?php endif;?>
+					</div>
+					<div class="col-md-12 col-6 mt-md-5 mt-5">
+						<span class="ps-lg-5 d-block fw-bolder mb-2">Social media</span>
+						<?php if( $social_links && is_array($social_links) ):?>
+							<?php foreach( $social_links as $s_link ){ ?>
+								<span class="ps-lg-5 d-block mb-2">
+									<a class="text-decoration-none text-capitalize" href="<?php echo $s_link['social_link_url'];?>" target="_blank"><?php echo getDomainNameFrom_URL($s_link['social_link_url'])?></a>
+								</span>
+							<?php };?>
+						<?php endif;?>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!--/container-lg-->
+	<!-- ReCaptcha instruction:  https://contactform7.com/recaptcha/ -->
+	<!-- https://www.google.com/recaptcha/admin/site/695949234/setup
+	SITE KEY: 6LeyV3spAAAAANWey7mGtEHllLRBGROvVzye6k75
+	SECRET KEY: 6LeyV3spAAAAABiMORuJDURE6ayLK898ufmshARX
+	 -->
 </section>
+
+<div id="site-info-bottom">
+	<div class="container-lg">
+		<div class="row">
+			<div class="col-md-12">
+				<p>Copyright <?php echo date("Y") . ' ' . get_bloginfo('name');?></p>
+			</div>
+		</div><!-- .row -->
+	</div><!-- .container -->
+</div><!-- .site-info -->
 
 <?php get_footer(); ?>

@@ -379,6 +379,122 @@ body {
     padding: 20px 0; }
 
 /*_________________________________________/#TECHNOLOGIES-SECTION*/
+/*_________________________________________#CONTACT US-SECTION*/
+.section-regular.contact {
+  /*background-image: url(http://dotebo.name/wp-content/uploads/2024/02/contact-bg.jpg);*/
+  min-height: 850px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  padding-top: 100px;
+  position: relative; }
+  .section-regular.contact p.suptitle {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-family: "Unbounded", sans-serif;
+    font-size: 1rem; }
+  .section-regular.contact .title {
+    font-weight: 600;
+    font-family: "Unbounded", sans-serif;
+    font-size: 3rem;
+    background: linear-gradient(22deg, #C27FFF, #00A9E2);
+    background: -webkit-linear-gradient(72deg, #C27FFF, #00A9E2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block; }
+  .section-regular.contact .--contact-cf form input:not(input[type="submit"]), .section-regular.contact .--contact-cf form textarea {
+    border: 1px solid #676A76;
+    background-color: transparent !important;
+    backdrop-filter: blur(5px);
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 300; }
+  .section-regular.contact .--contact-cf form textarea {
+    resize: none;
+    height: 220px; }
+  .section-regular.contact .--contact-cf form ::placeholder {
+    color: #FFFFFF;
+    opacity: 1; }
+  .section-regular.contact .--contact-cf form ::-ms-input-placeholder {
+    color: #FFFFFF;
+    opacity: 1; }
+  .section-regular.contact .--contact-cf form input[type="submit"] {
+    background: transparent !important;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    font-family: "Unbounded", sans-serif;
+    font-size: 1.25rem;
+    color: #00A9E2;
+    padding: 0;
+    border-bottom: 1px solid #00A9E2; }
+    .section-regular.contact .--contact-cf form input[type="submit"]:after {
+      content: url(/wp-content/themes/maxcanvas_child/img/arrw-i-right-blue.svg);
+      margin-left: 9px; }
+    .section-regular.contact .--contact-cf form input[type="submit"]:hover, .section-regular.contact .--contact-cf form input[type="submit"]:focus, .section-regular.contact .--contact-cf form input[type="submit"]:active {
+      color: #231B64; }
+      .section-regular.contact .--contact-cf form input[type="submit"]:hover:after, .section-regular.contact .--contact-cf form input[type="submit"]:focus:after, .section-regular.contact .--contact-cf form input[type="submit"]:active:after {
+        content: url(/wp-content/themes/maxcanvas_child/img/arrw-i-right-d-blue.svg); }
+    .section-regular.contact .--contact-cf form input[type="submit"]:hover, .section-regular.contact .--contact-cf form input[type="submit"]:focus, .section-regular.contact .--contact-cf form input[type="submit"]:active {
+      color: #00A9E2; }
+  .section-regular.contact .--contact-cf form .submit-block:after {
+    content: url(/wp-content/themes/maxcanvas_child/img/arrw-i-right-blue.svg);
+    margin-left: 9px; }
+  .section-regular.contact .--contact-cf form .submit-block .ajax-loader {
+    display: none; }
+  .section-regular.contact .--contact-cf form.invalid .wpcf7-response-output {
+    border: 0px solid transparent;
+    color: #dc3232;
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em; }
+  .section-regular.contact .--contact-cf form.failed .wpcf7-response-output {
+    border: 0px solid transparent;
+    color: #dc3232;
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em; }
+  .section-regular.contact .--contact-cf form.aborted .wpcf7-response-output {
+    border: 0px solid transparent;
+    color: #dc3232;
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em; }
+  .section-regular.contact .--contact-cf form .wpcf7-not-valid-tip {
+    font-size: 0.9em; }
+  .section-regular.contact .--contact-info span, .section-regular.contact .--contact-info p {
+    color: #FFFFFF; }
+  .section-regular.contact .--contact-info span {
+    font-weight: 400;
+    font-family: "Unbounded", sans-serif;
+    font-size: 0.9rem; }
+    .section-regular.contact .--contact-info span a {
+      color: #FFFFFF; }
+      .section-regular.contact .--contact-info span a:hover, .section-regular.contact .--contact-info span a:focus, .section-regular.contact .--contact-info span a:active {
+        background: linear-gradient(22deg, #C27FFF, #00A9E2);
+        background: -webkit-linear-gradient(72deg, #C27FFF, #00A9E2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block; }
+  .section-regular.contact .--contact-info span.fw-bolder {
+    color: #FFFFFF;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-family: "Unbounded", sans-serif;
+    font-size: 1.3rem; }
+
+/*_________________________________________/#CONTACT US-SECTION*/
+#site-info-bottom {
+  position: relative; }
+  #site-info-bottom p {
+    color: #676A76;
+    font-weight: 300;
+    font-family: "Unbounded", sans-serif;
+    font-size: 0.82rem;
+    position: absolute;
+    bottom: 0; }
+
 /**
 	MEDIA QUERIES:  project_services
 */
@@ -451,7 +567,15 @@ body {
   .project-services .section-regular.services .--our-services .--our-services-description {
     font-size: 0.81rem; }
 
-  /*_________________________________________/#PROJECTS & SERVICES-SECTION*/ }
+  /*_________________________________________/#PROJECTS & SERVICES-SECTION*/
+  /*_________________________________________#CONTACT US-SECTION*/
+  .section-regular.contact {
+    padding-top: 50px; }
+
+  #site-info-bottom p {
+    bottom: -10px; }
+
+  /*_________________________________________/#CONTACT US-SECTION*/ }
 @media screen and (max-width: 575px) {
   /*from 575px and less (Class prefix .col-)*/
   #breakpoint_check {
@@ -514,9 +638,18 @@ body {
     font-size: 2rem; }
 
   .section-regular.technologies {
-    padding-bottom: 50px; }
+    padding-bottom: 45px; }
 
-  /*_________________________________________/#OUR TOOLS(TECHNOLOGIES)*/ }
+  /*_________________________________________/#OUR TOOLS(TECHNOLOGIES)*/
+  /*_________________________________________#CONTACT US-SECTION*/
+  .section-regular.contact .--contact-cf form input:not(input[type="submit"]),
+  .section-regular.contact .--contact-cf form textarea {
+    font-size: 0.88rem; }
+
+  .section-regular.contact .--contact-info span.fw-bolder {
+    font-size: 1.12rem; }
+
+  /*_________________________________________/#CONTACT US-SECTION*/ }
 @media screen and (max-width: 399px) {
   #breakpoint_check {
     width: 399px; }

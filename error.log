@@ -61,3 +61,6 @@
 [Tue Feb 20 09:30:39.972821 2024] [php7:notice] [pid 9824] [client 127.0.0.1:59058] PHP Notice:  Undefined index: $i in /var/www/dotebo.name/wp-content/themes/maxcanvas_child/front-page.php on line 137
 [Tue Feb 20 09:30:39.973016 2024] [php7:notice] [pid 9824] [client 127.0.0.1:59058] PHP Notice:  Undefined index: $i in /var/www/dotebo.name/wp-content/themes/maxcanvas_child/front-page.php on line 137
 [Tue Feb 20 09:30:39.973033 2024] [php7:notice] [pid 9824] [client 127.0.0.1:59058] PHP Notice:  Undefined index: $i in /var/www/dotebo.name/wp-content/themes/maxcanvas_child/front-page.php on line 137
+[Wed Feb 21 13:09:55.509872 2024] [php7:emerg] [pid 14728] [client 127.0.0.1:58196] PHP Parse error:  syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in /var/www/dotebo.name/wp-content/themes/maxcanvas_child/front-page.php on line 190
+[Wed Feb 21 13:17:34.988549 2024] [php7:emerg] [pid 15497] [client 127.0.0.1:54322] PHP Parse error:  syntax error, unexpected ')' in /var/www/dotebo.name/wp-content/themes/maxcanvas_child/front-page.php on line 173
+[Wed Feb 21 13:17:52.634963 2024] [php7:emerg] [pid 14520] [client 127.0.0.1:53746] PHP Parse error:  syntax error, unexpected ')' in /var/www/dotebo.name/wp-content/themes/maxcanvas_child/front-page.php on line 173

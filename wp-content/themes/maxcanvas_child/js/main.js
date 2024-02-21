@@ -1,23 +1,24 @@
 document.addEventListener( 'DOMContentLoaded', function () { //console.log('init');
-	console.log(globalData);
+	//console.log(globalData);
 
-	//window.scrollTo({ top: 0, behavior: 'smooth' }); //On load the Page automatically scroll to top
+	window.scrollTo({ top: 0, behavior: 'smooth' }); //On load the Page automatically scroll to top
 
 	/*Check Display Screen breakpoint*/
 	const cssElem = window.getComputedStyle( document.getElementById("breakpoint_check"), null );
 	let breakpointCheck = cssElem.getPropertyValue('width'); //console.log(breakpointCheck); //possible values: 100%|1400px|1199px|991px|767px|575px
 
 	if( breakpointCheck === '100%' ){
-		console.log('Full screen');
+		//console.log('Full screen');
 	}else if( breakpointCheck === '1400px' ){
-		console.log('screen 1400px and up');
+		//console.log('screen 1400px and up');
 	}else if( breakpointCheck === '1199px' ){
-		console.log('screen 1199px and less');
+		//console.log('screen 1199px and less');
 	}else if( breakpointCheck === '767px' ){
-		console.log('screen 767px and less');
+		//console.log('screen 767px and less');
 	}else if( breakpointCheck === '575px' ){
-		console.log('screen 575px and less');
-	}else{ console.log('do something else...'); }
+		//console.log('screen 575px and less');
+	}else{ //console.log('do something else...');
+	}
 	/*__/Check Display Screen breakpoint*/
 
 	/*Bootstrap 5x Popover initialization*/
@@ -30,7 +31,7 @@ document.addEventListener( 'DOMContentLoaded', function () { //console.log('init
 	/*__/Bootstrap 5x Tooltip initialization*/
 
 	/*Smooth scroll by Section*/
-	const smothScrollElems = document.querySelectorAll('a[href^="#"]:not(a[href="#"])'); //те ссылки,`href` кот.начинается с # ,но не те,где только лишь # и все
+	const smothScrollElems = document.querySelectorAll('a[href^="#"]:not(a[href="#"])');
 	const bodyContent = document.body;
 
 	smothScrollElems.forEach(
@@ -65,12 +66,6 @@ document.addEventListener( 'DOMContentLoaded', function () { //console.log('init
 		event.preventDefault();
 	});
 	/*__/Disable standard behavior for a link for a decorative menu item*/
-
-
-	//document.getElementById('about').scrollIntoView(true); //scroll to Element with ID="about"
-	/*let container = document.body,
-		element = document.getElementById('about');
-	container.scrollTop = element.offsetTop;*/
 
 	let aboutSection = document.getElementById('about');
 	let headerNavbar = document.getElementById('header_navbar');

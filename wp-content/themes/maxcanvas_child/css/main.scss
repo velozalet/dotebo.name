@@ -487,6 +487,106 @@ body{ font-family:$fontFamily-unbounded; font-weight:$fontWeight-400; color:$col
 }
 /*_________________________________________/#TECHNOLOGIES-SECTION*/
 
+/*_________________________________________#CONTACT US-SECTION*/
+.section-regular.contact{
+    /*background-image: url(http://dotebo.name/wp-content/uploads/2024/02/contact-bg.jpg);*/
+    min-height:850px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    padding-top: 100px;
+    position: relative;
+
+    p.suptitle{
+        @include suptitle-white-unbounded;
+    }
+    .title{
+        @include title-unbounded;
+        @include text-linear-gradient-blue;
+    }
+    .--contact-cf{
+        form{
+            input:not(input[type="submit"]),textarea{
+                border: 1px solid $color-gray;
+                background-color: transparent !important;
+                backdrop-filter: blur(5px);
+                color:$color-white;
+                font-size:1rem;
+                font-family: $fontFamily-unbounded;
+                font-weight: $fontWeight-300;
+            }
+            textarea{
+                resize:none;
+                height: 220px;
+            }
+            ::placeholder{ color:$color-white; opacity:1; }
+            ::-ms-input-placeholder { color:$color-white; opacity:1; }
+
+            input[type="submit"]{
+                background:transparent !important; border:none; outline:none;
+                @include cst-link-arrow-blue;
+                &:hover, &:focus, &:active{ color:$color-blue; }
+                padding:0;
+                border-bottom: 1px solid $color-blue;
+            }
+            .submit-block{
+                &:after{
+                    content: url(/wp-content/themes/maxcanvas_child/img/arrw-i-right-blue.svg);
+                    margin-left:9px;
+                }
+                .ajax-loader{ display:none; }
+            }
+
+            &.invalid{
+                .wpcf7-response-output{
+                    border:0px solid transparent; color:#dc3232; margin:0; padding:0; font-size:0.9em;
+                }
+            }
+            &.failed{
+                .wpcf7-response-output{ border:0px solid transparent; color:#dc3232; margin:0; padding:0; font-size:0.9em; }
+            }
+            &.aborted{
+                .wpcf7-response-output{ border:0px solid transparent; color:#dc3232; margin:0; padding:0; font-size:0.9em; }
+            }
+            .wpcf7-not-valid-tip{ font-size:0.9em; }
+        }
+    }
+    .--contact-info{
+        span,p{ color:$color-white; }
+        span{
+            font-weight: $fontWeight-400;
+            font-family: $fontFamily-unbounded;
+            font-size:0.9rem;
+            a{
+                color:$color-white;
+                &:hover, &:focus, &:active{
+                    @include text-linear-gradient-blue;
+                }
+            }
+        }
+        span.fw-bolder{
+            color:$color-white;
+            text-transform: capitalize;
+            font-weight: $fontWeight-500;
+            font-family: $fontFamily-unbounded;
+            font-size:1.3rem;
+        }
+    }
+}
+/*_________________________________________/#CONTACT US-SECTION*/
+#site-info-bottom{
+    position: relative;
+    p{
+        color:$color-gray;
+        font-weight: $fontWeight-300;
+        font-family: $fontFamily-unbounded;
+        font-size:0.82rem;
+
+        position:absolute; bottom:0;
+    }
+}
+
+
 
 /**
 	MEDIA QUERIES:  project_services
@@ -544,6 +644,10 @@ body{ font-family:$fontFamily-unbounded; font-weight:$fontWeight-400; color:$col
     .project-services .section-regular.services .--our-services .--our-services-description{ font-size:0.81rem; }
     /*_________________________________________/#PROJECTS & SERVICES-SECTION*/
 
+    /*_________________________________________#CONTACT US-SECTION*/
+    .section-regular.contact{ padding-top: 50px; }
+    #site-info-bottom p{ bottom:-10px; }
+    /*_________________________________________/#CONTACT US-SECTION*/
 }
 @media screen and (max-width: 575px) { /*from 575px and less (Class prefix .col-)*/
     #breakpoint_check{ width:575px; } /*100%|1400px|1199px|991px|767px|575px*/
@@ -575,8 +679,14 @@ body{ font-family:$fontFamily-unbounded; font-weight:$fontWeight-400; color:$col
 
     /*_________________________________________#OUR TOOLS(TECHNOLOGIES)*/
     .section-regular.technologies .title{ font-size:2rem; }
-    .section-regular.technologies{ padding-bottom:50px; }
+    .section-regular.technologies{ padding-bottom:45px; }
     /*_________________________________________/#OUR TOOLS(TECHNOLOGIES)*/
+
+    /*_________________________________________#CONTACT US-SECTION*/
+    .section-regular.contact .--contact-cf form input:not(input[type="submit"]),
+    .section-regular.contact .--contact-cf form textarea{ font-size:0.88rem; }
+    .section-regular.contact .--contact-info span.fw-bolder{ font-size:1.12rem; }
+    /*_________________________________________/#CONTACT US-SECTION*/
 }
 
 @media screen and (max-width: 399px) {
